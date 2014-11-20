@@ -332,6 +332,8 @@ input[type="text"] {
 .imgSpeakerItem img {
 	border: 1px solid #96938e;
 	border-radius: 50%;
+	width: 160px;
+	height: 160px;
 }
 
 .nameSpeakerItem {

@@ -18,6 +18,12 @@
 			var mapOptions = {
 				center: myLatlng,
 				zoom: 16,
+				mapTypeControl: false,
+				draggable: false,
+				scaleControl: false,
+				scrollwheel: false,
+				navigationControl: false,
+				streetViewControl: false,
 				mapTypeId: google.maps.MapTypeId.ROADMAP
 			}
 			var map = new google.maps.Map(mapCanvas, mapOptions)
@@ -25,7 +31,7 @@
 			var marker = new google.maps.Marker({
 				position: myLatlng,
 				map: map,
-				title: 'Креативне пространство "Спалах"'
+				title: 'Креативне пространство "Спалах"',
 			});
 		}
 
@@ -41,13 +47,13 @@
 		<a href="#"><img src="img/logo.png" class="logo" /></a>
 		<div class="mainMenu">
 			<ul>
-				<li><a href="#">Доповідачі</a></li>
+				<li><a href="#">Докладчики</a></li>
 				<!-- <li><a href="#">Програма</a></li>
 				<li><a href="#">Партнери</a></li>
 				<li><a href="#">Організатори</a></li>
 				<li><a href="#">Попередні конференції</a></li>
 				<li><a href="#">Спонсори</a></li>-->
-				<li><a href="#">Місце</a></li>
+				<li><a href="#">Место</a></li>
 			</ul>
 		</div>
 	</div><!-- end #header-->
@@ -69,7 +75,7 @@
 				</div>
 				<div class="eventDate"><span class="eventTime">19:15</span>December 15, 2014</div>
 				<div class="btnRegister">
-					<a href="#">Register</a>
+					<a href="https://www.eventbrite.com/e/kharkivjs-meetup-tickets-14498111241">Register</a>
 				</div>
 			</div><!-- end .speakers-->
 
@@ -79,14 +85,14 @@
 				<div class="containerSpeakers">
 					<div class="itemSpeaker">
 						<div class="innerItemSpeaker">
-							<span class="imgSpeakerItem"><img src="img/osin_small.jpg" /></span>
+							<span class="imgSpeakerItem"><img src="img/2.png" /></span>
 							<span class="nameSpeakerItem">Alexander Osin</span>
 							<span class="descSpeakerItem"><span class="highlight"> Code reusability</span></span></span>
 						</div>
 					</div>
 					<div class="itemSpeaker">
 						<div class="innerItemSpeaker">
-							<span class="imgSpeakerItem"><img src="img/speaker.jpg" /></span>
+							<span class="imgSpeakerItem"><img src="img/3.png" /></span>
 							<span class="nameSpeakerItem">Paul Miller</span>
 							<span class="descSpeakerItem"><span class="highlight">Exim — новый мощный фреймворк на Flux / React.</span></span></span>
 							
@@ -94,14 +100,14 @@
 					</div>
 					<div class="itemSpeaker">
 						<div class="innerItemSpeaker">
-							<span class="imgSpeakerItem"><img src="img/sor.jpeg" /></span>
+							<span class="imgSpeakerItem"><img src="img/4.png" /></span>
 							<span class="nameSpeakerItem">Valery Sorokobatko</span>
 							<span class="descSpeakerItem"><span class="highlight">Как ангулар с ES6 живут у нас в приложухе</span></span>
 						</div>
 					</div>
 					<div class="itemSpeaker">
 						<div class="innerItemSpeaker">
-							<span class="imgSpeakerItem"><img src="img/speaker.jpg" /></span>
+							<span class="imgSpeakerItem"><img src="img/1.png" /></span>
 							<span class="nameSpeakerItem">Jury Luchaninov</span>
 							<span class="descSpeakerItem"><span class="highlight">Оптимизация производительности мобильных javascript|html приложений</span></span>
 						</div>
@@ -109,15 +115,15 @@
 					
 				</div>
 				<div class="btnRegister">
-					<a href="#">Register</a>
+					<a href="https://www.eventbrite.com/e/kharkivjs-meetup-tickets-14498111241">Register</a>
 				</div>
 			</div><!-- end .speakers-->
 			
 			<!-- ************** MAP ************** -->
 			<div class="blockMap">
 				<div class="textBlockMap">
-					<span class="titleTextBlockMap">МІСЦЕ</span>
-					<div class="locationTextBlockMap">вул. Демченко, 6<br />4 грудня, 2014, 19:15<br />095 89 129 89</div>
+					<span class="titleTextBlockMap">Место</span>
+					<div class="locationTextBlockMap">ул. Демченко, 6<br />4 декабря, 2014, 19:15<br />095 89 129 89</div>
 				</div>
 				<div class="mapBlockMap">
 					<div id = 'map-canvas'></div>
