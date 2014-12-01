@@ -240,7 +240,7 @@ input[type="text"] {
 .blockInfo {
 	background: #191919 url('../img/rhino.jpg') no-repeat center bottom;
 	min-height: 600px;
-	padding: 50px 0 0 0;
+	padding: 25px 0 0 0;
 	text-align: center;
 }
 
@@ -330,7 +330,6 @@ input[type="text"] {
 }
 
 .imgSpeakerItem img {
-	border: 1px solid #96938e;
 	border-radius: 50%;
 	width: 160px;
 	height: 160px;
@@ -375,6 +374,19 @@ input[type="text"] {
 	letter-spacing: 9px;
 }
 
+.btnRegister.feedback a {
+	display: inline-block;
+	height: 96px;
+	line-height: 96px;
+	font-family: 'fira_monoregular';
+	font-size: 30px;
+	color: #FF8000;
+	text-decoration: none;
+	border: 2px solid #FF8000;
+	padding: 0 40px;
+	letter-spacing: 9px;
+}
+
 .blockMap {
 	background: #f1f1f1;
 }
@@ -405,4 +417,120 @@ input[type="text"] {
 	text-align: center;
 	font-size: 0;
 	overflow: hidden;
+}
+
+.blockSchedule {
+	background: #313131;
+}
+
+.containerSchedule {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 15px 0;
+}
+
+.iconPartSchedule {
+	float: left;
+	width: 90px;
+}
+
+.iconPartSchedule:before {
+	content: '';
+	width: 30px;
+	height: 30px;
+	background-image: url('../img/iconsSchedule.png');
+	background-repeat: no-repeat;
+	display: block;
+}
+
+.partShedule_1 .iconPartSchedule:before {
+	background-position: 0 0px;
+}
+
+.partShedule_2 .iconPartSchedule:before {
+	background-position: 0 -30px;
+}
+
+.partShedule_3 .iconPartSchedule:before {
+	display: none;
+}
+
+.partShedule_4 .iconPartSchedule:before {
+	background-position: 0 -60px;
+}
+
+.partShedule_5 .iconPartSchedule:before {
+	background-position: 0 -90px;
+}
+
+.partShedule_6 .iconPartSchedule:before {
+	background-position: 0 -120px;
+}
+
+.partShedule_7 .iconPartSchedule:before {
+	background-position: 0 -150px;
+}
+
+.containerSchedule .partSchedule {
+	padding: 20px 0;
+	border-top: 1px solid #363636;
+}
+
+.containerSchedule .partSchedule:first-child {
+	border-top: none;
+}
+
+.tablePartSchedule {
+	margin-left: 90px;
+}
+
+.tablePartSchedule table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	table-layout: fixed;
+}
+
+.tablePartSchedule table tr,
+.tablePartSchedule table tr td {
+	margin: 0;
+	padding: 0;
+}
+
+.tablePartSchedule table tr td {
+	line-height: 20px;
+	padding: 9px 0 7px 0;
+}
+
+.tablePartSchedule table tr:nth-child(odd) td {
+	padding: 5px 0 3px 0;
+	background: #2a2a2a;
+	vertical-align: top;
+}
+
+.tablePartSchedule table tr:last-child:first-child td {
+	background: none;
+	padding: 6px 0 5px 0;
+}
+
+.tablePartSchedule table tr td:nth-child(1) {
+	font-family: 'fira_monoregular';
+	font-size: 18px;
+	color: #33cc00;
+	padding-left: 10px;
+	width: 100px;
+}
+
+.tablePartSchedule table tr td:nth-child(2) {
+	font-family: 'fira_sansregular';
+	font-size: 16px;
+	color: #fff;
+	width: 200px;
+	padding-right: 20px;
+}
+
+.tablePartSchedule table tr td:nth-child(3) {
+	font-family: 'fira_monoregular';
+	font-size: 18px;
+	color: #fff;
 }
