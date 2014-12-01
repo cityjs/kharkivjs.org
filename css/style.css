@@ -240,7 +240,7 @@ input[type="text"] {
 .blockInfo {
 	background: #191919 url('../img/rhino.jpg') no-repeat center bottom;
 	min-height: 600px;
-	padding: 50px 0 0 0;
+	padding: 25px 0 0 0;
 	text-align: center;
 }
 
