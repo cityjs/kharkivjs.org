@@ -374,6 +374,19 @@ input[type="text"] {
 	letter-spacing: 9px;
 }
 
+.btnRegister.feedback a {
+	display: inline-block;
+	height: 96px;
+	line-height: 96px;
+	font-family: 'fira_monoregular';
+	font-size: 30px;
+	color: #FF8000;
+	text-decoration: none;
+	border: 2px solid #FF8000;
+	padding: 0 40px;
+	letter-spacing: 9px;
+}
+
 .blockMap {
 	background: #f1f1f1;
 }
