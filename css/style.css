@@ -559,6 +559,10 @@ input[type="text"] {
 	display: inline-block;
 }
 
+a.dev-pro img{
+	width: 400px;
+}
+
 .titlePartnersCategory {
 	color: #787880;
 	text-transform: uppercase;
