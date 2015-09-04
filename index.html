@@ -20,10 +20,10 @@
 	<script>
 		function initialize() {
 			var mapCanvas = document.getElementById('map-canvas');
-			var myLatlng = new google.maps.LatLng(49.993351, 36.239673);
+			var myLatlng = new google.maps.LatLng(50.001560, 36.231537);
 			var mapOptions = {
 				center: myLatlng,
-				zoom: 16,
+				zoom: 11,
 				mapTypeControl: false,
 				draggable: false,
 				scaleControl: false,
@@ -37,7 +37,7 @@
 			var marker = new google.maps.Marker({
 				position: myLatlng,
 				map: map,
-				title: 'Креативне пространство "Спалах"',
+				title: 'Харьков',
 			});
 		}
 
@@ -54,13 +54,7 @@
 		<div class="mainMenu">
 			<ul>
 				<li><a href="#speakers">Докладчики</a></li>
-				<li><a href="#partners">Партнеры</a></li><!--
-				<li><a href="#">Організатори</a></li>
-				<li><a href="#">Попередні конференції</a></li>
-				<li><a href="#">Спонсори</a></li>-->
-				<li><a href="#agenda">Программа</a></li>
 				<li><a href="#place">Место</a></li>
-				<li><a target = "_blank" href="http://abogdanova.com/kharkivjs1">Фото</a></li>
 			</ul>
 		</div>
 	</div><!-- end #header-->
@@ -81,12 +75,12 @@
 					</ul>
 				</div>
 
-				<div class="eventDate"><span class="eventTime">11:00</span>February 7, 2015<br>JS meetup #2<br> Oh My Node!<!--<br>AfterParty 22:00 в Пробке--></div>
+        <div class="eventInfo">October 24, 2015<br>JS meetup #5<br><span class="highlight">Serious JS</span></div><!-- TODO: Change the conference name -->
 				<!--<div class="btnRegister feedback">
 					<a target = "_blank" href="https://github.com/blackrabbit99/kharkivjs_site/issues">Feedback</a>
 				</div>-->
 				<div class="btnRegister">
-					<a href="http://kharkivjs.eventbrite.com">Register</a>
+					<a href="http://goo.gl/forms/YOkF7RWmWP">Регистрация</a>
 				</div>
 			</div><!-- end .speakers-->
 
@@ -96,130 +90,86 @@
 				<div class="containerSpeakers">
 					<div class="itemSpeaker">
 						<div class="innerItemSpeaker">
-							<span class="imgSpeakerItem"><img src="img/5.jpg" /></span>
-							<span class="nameSpeakerItem">Dmitry Skrinnik</span>
-							<span class="descSpeakerItem"><span class="highlight">Фейерверк Фреймвоков. Обзор Node.JS фреймворков.</span></span>
+							<span class="imgSpeakerItem"><img src="img/speakers/sudodoki.jpg" /></span>
+							<span class="nameSpeakerItem">Александр Лапшин</span>
+							<span class="descSpeakerItem"><span class="highlight">Уточняется</span></span>
 						</div>
 					</div>
 					<div class="itemSpeaker">
 						<div class="innerItemSpeaker">
-							<span class="imgSpeakerItem"><img src="img/9.jpeg" /></span>
-							<span class="nameSpeakerItem">Artem Bey</span>
-							<span class="descSpeakerItem"><span class="highlight">NodeJS streams</span></span></span>
-							
+							<span class="imgSpeakerItem"><img src="img/speakers/shvaikalesh.jpg" /></span>
+							<span class="nameSpeakerItem">Алексей Швайка</span>
+							<span class="descSpeakerItem"><span class="highlight">Web Animations tomorrow</span></span>
 						</div>
 					</div>
 					<div class="itemSpeaker">
 						<div class="innerItemSpeaker">
-							<span class="imgSpeakerItem"><img src="img/7.jpg" /></span>
-							<span class="nameSpeakerItem">Eldar Djafarov</span>
-							<span class="descSpeakerItem"><span class="highlight">The Holy Grail of web development. Изоморфные приложения миф или реальность</span></span></span>
+							<span class="imgSpeakerItem"><img src="img/speakers/listochkin.jpg" /></span>
+							<span class="nameSpeakerItem">Андрей Листочкин</span>
+							<span class="descSpeakerItem"><span class="highlight">Уточняется</span></span>
 						</div>
 					</div>
-					
 					<div class="itemSpeaker">
 						<div class="innerItemSpeaker">
-							<span class="imgSpeakerItem"><img src="img/6.jpg" /></span>
-							<span class="nameSpeakerItem">Illya Klymov</span>
-							<span class="descSpeakerItem"><span class="highlight">Выжимая максимум: производительность node.js приложений</span></span>
+							<span class="imgSpeakerItem"><img src="img/speakers/sorokobatko.jpg" /></span>
+							<span class="nameSpeakerItem">Валерий Сорокобатько</span>
+							<span class="descSpeakerItem"><span class="highlight">ES6 Angular flow</span></span>
 						</div>
 					</div>
-					
+					<div class="itemSpeaker">
+						<div class="innerItemSpeaker">
+							<span class="imgSpeakerItem"><img src="img/speakers/ghaiklor.jpg" /></span>
+							<span class="nameSpeakerItem">Евгений Обрезков</span>
+							<span class="descSpeakerItem"><span class="highlight">Уточняется</span></span>
+						</div>
+					</div>
+					<div class="itemSpeaker">
+						<div class="innerItemSpeaker">
+							<span class="imgSpeakerItem"><img src="img/speakers/xanf.jpg" /></span>
+							<span class="nameSpeakerItem">Илья Климов</span>
+							<span class="descSpeakerItem"><span class="highlight">Уточняется</span></span>
+						</div>
+					</div>
+					<div class="itemSpeaker">
+						<div class="innerItemSpeaker">
+							<span class="imgSpeakerItem"><img src="img/speakers/alf-er.jpg" /></span>
+							<span class="nameSpeakerItem">Илья Сегеда</span>
+							<span class="descSpeakerItem"><span class="highlight">React вас боится</span></span>
+						</div>
+					</div>
+					<div class="itemSpeaker">
+            <div class="innerItemSpeaker">
+              <span class="imgSpeakerItem"><img src="img/speakers/chicoxyzzy.jpg" /></span>
+              <span class="nameSpeakerItem">Сергей Рубанов</span>
+              <span class="descSpeakerItem"><span class="highlight">WebAssembly</span></span>
+            </div>
+          </div>
+					<div class="itemSpeaker">
+						<div class="innerItemSpeaker">
+							<span class="imgSpeakerItem"><img src="img/speakers/edjafarov.jpg" /></span>
+							<span class="nameSpeakerItem">Эльдар Джафаров</span>
+							<span class="descSpeakerItem"><span class="highlight">Уточняется</span></span>
+						</div>
+					</div>
+					<div class="itemSpeaker">
+						<div class="innerItemSpeaker">
+							<span class="imgSpeakerItem"><img src="img/speakers/defly.jpg" /></span>
+							<span class="nameSpeakerItem">@defly</span>
+							<span class="descSpeakerItem"><span class="highlight">Уточняется</span></span>
+						</div>
+					</div>
 				</div>
 				<div class="btnRegister">
-					<a href="http://kharkivjs.eventbrite.com">Register</a>
+          <a href="http://goo.gl/forms/SxISLjIhYu">Подать заявку</a>
 				</div>
 			</div><!-- end .speakers-->
 			
-			<!-- ************** SCHEDULE ************** -->
-			<div id = 'agenda' class="blockSchedule">
-				<span class="titleBlock">програма</span>
-				<div class="containerSchedule">
-					<div class="partSchedule partShedule_1">
-						<div class="iconPartSchedule"></div>
-						<div class="tablePartSchedule">
-							<table>
-								<tr>
-									<td>Открыта</td>
-									<td>Регистрация в Спалахе</td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>11:00</td>
-									<td>Организаторы</td>
-									<td>Начинаем</td>
-								</tr>
-								<tr>
-									<td>11:15</td>
-									<td>Illya Klymov</td>
-									<td>Выжимая максимум: производительность node.js приложений</td>
-								</tr>
-								<tr>
-									<td>11:50</td>
-									<td>Coffee break</td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>12-00</td>
-									<td>Dmitry Skrinnik</td>
-									<td>Фейерверк Фреймвоков. Обзор Node.JS фреймворков</td>
-									
-								</tr>
-								<tr>
-									<td>12:40</td>
-									<td>Coffee break</td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>13-00</td>
-									<td>Eldar Djafarov</td>
-									<td>The Holy Grail of web development. Изоморфные приложения миф или реальность</td>
-								</tr>
-								<tr>
-									<td>13:40</td>
-									<td>Coffee break</td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>13-50</td>
-									<td>Artem Bey</td>
-									<td>NodeJS streams</td>
-								</tr>
-							</table>
-						</div>
-					</div>
-				</div>
-			</div><!-- end .schedule-->
-			
-			<!-- ************** SCHEDULE ************** -->
-			<div class="blockPartners" id = "partners">
-				<span class="titleBlock">партнери та організатори</span>
-				<div class="containerPartners">
-					<div class="partnersCategory">
-						<span class="titlePartnersCategory">General</span>
-						<a href = "http://www.dev-pro.net.ua/" target = "_blank" class = "dev-pro">
-							<img src="img/dp.jpg" />
-						</a>
-						<a href = "http://globallogic.com.ua/" target = "_blank" class = "global-logic">
-							<img src="img/gl.jpg" />
-						</a>
-					</div>
-					<!--<div class="partnersCategory">
-						<span class="titlePartnersCategory">Platinum</span>
-						<img src="img/1.png" />
-					</div>-->
-				</div>
-			</div>
-
 			<!-- ************** MAP ************** -->
 			<div id = 'place' class="blockMap">
 				<div class="textBlockMap">
 					<span class="titleTextBlockMap">Место</span>
-					<div class="locationTextBlockMap">ул. Демченко, 6 Коворкинг "Spalah"<br />7 февраля, 2015, 11:00<br />myzlio@gmail.com</div>
 				</div>
-				<div class="mapBlockMap">
-					<div id = 'map-canvas'></div>
-				</div>
+				<div class="mapBlockMap"><div id="map-canvas"></div></div>
 			</div><!-- end .map-->
 
 		</div><!-- end #content-->

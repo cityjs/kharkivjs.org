@@ -277,7 +277,7 @@ input[type="text"] {
 	display: block;
 }
 
-.eventDate {
+.eventInfo {
 	display: block;
 	width: 290px;
 	margin: 0 auto;
@@ -287,14 +287,6 @@ input[type="text"] {
 	color: #fff;
 	padding: 0 0 18px 0;
 	letter-spacing: 6px;
-}
-
-.eventTime {
-	display: block;
-	font-family: 'fira_sansheavy';
-	font-size: 50px;
-	margin-bottom: -2px;
-	letter-spacing: 0;
 }
 
 .blockSpeakers {
@@ -317,7 +309,7 @@ input[type="text"] {
 }
 
 .innerItemSpeaker {
-	width: 300px;
+	width: 100%;
 	display: inline-block;
 }
 
@@ -351,6 +343,12 @@ input[type="text"] {
 	color: #fff;
 }
 
+.nameSpeakerItem,
+.descSpeakerItem {
+  margin: 0 8px;
+}
+
+.eventInfo .highlight,
 .descSpeakerItem .highlight {
 	color: #f0db4f;
 }
@@ -372,6 +370,11 @@ input[type="text"] {
 	border: 2px solid #33cc00;
 	padding: 0 40px;
 	letter-spacing: 9px;
+}
+
+.btnRegister a:active {
+	color: #f0db4f;
+	border-color: #f0db4f;
 }
 
 .btnRegister.feedback a {
@@ -478,6 +481,17 @@ input[type="text"] {
 
 .containerSchedule .partSchedule:first-child {
 	border-top: none;
+}
+
+.not-ready {
+  font-size: 36px;
+  color: white;
+  text-align: center;
+  display: block;
+}
+
+.not-ready.m-inverse {
+  color: #333;
 }
 
 .tablePartSchedule {
