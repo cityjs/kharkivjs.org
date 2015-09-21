@@ -20,10 +20,10 @@
 	<script>
 		function initialize() {
 			var mapCanvas = document.getElementById('map-canvas');
-			var myLatlng = new google.maps.LatLng(50.001560, 36.231537);
+			var myLatlng = new google.maps.LatLng(49.98935276, 36.22232348);
 			var mapOptions = {
 				center: myLatlng,
-				zoom: 11,
+				zoom: 15,
 				mapTypeControl: false,
 				draggable: true,
 				scaleControl: false,
@@ -77,7 +77,7 @@
 					</ul>
 				</div>
 
-        <div class="eventInfo">October 31, 2015<br>JS meetup #5<br><span class="highlight">Serious JS</span></div><!-- TODO: Change the conference name -->
+        <div class="eventInfo">Ноябрь 7, 2015<br>JS conference #5<br><span class="highlight">Serious JS</span></div><!-- TODO: Change the conference name -->
 				<!--<div class="btnRegister feedback">
 					<a target = "_blank" href="https://github.com/blackrabbit99/kharkivjs_site/issues">Feedback</a>
 				</div>-->
@@ -216,7 +216,10 @@
 			<!-- ************** MAP ************** -->
 			<div id = 'place' class="blockMap">
 				<div class="textBlockMap">
+
 					<span class="titleTextBlockMap">Место</span>
+					<div class="locationTextBlockMap">ул. Карла Марска, 1 Платформа "Fabrica"<br />7 ноября, 2015<br />myzlio@gmail.com</div>
+				</div>
 				</div>
 				<div class="mapBlockMap"><div id="map-canvas"></div></div>
 			</div><!-- end .map-->
