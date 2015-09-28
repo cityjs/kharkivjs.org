@@ -573,20 +573,38 @@ input[type="text"] {
 	display: inline-block;
 }
 
-a.dev-pro img{
+a.devpro img{
 	width: 400px;
+  display: inline-block;
+}
+
+a.picsio{
+  height: 200px;
+}
+
+a.picsio img{
+  width: 400px;
+  display: inline-block;
 }
 
 a.global-logic img{
 	width: 400px;
+  display: inline-block;
+}
+
+a.dataart:after {
+    content: '\A';
+    white-space: pre;
 }
 
 a.dataart img{
-	width: 80%;
+	width: 400px;
+  display: inline-block;
 }
 
 a.cryptoneat img{
-  width: 700px;
+  width: 400px;
+  display: inline-block;
 }
 
 .titlePartnersCategory {
