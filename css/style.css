@@ -603,6 +603,11 @@ a.dataart:after {
     white-space: pre;
 }
 
+a.cryptoneat:after {
+  content: '\A';
+  white-space: pre;
+}
+
 a.dataart img{
 	width: 400px;
   display: inline-block;
