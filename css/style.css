@@ -416,6 +416,12 @@ input[type="text"] {
 	padding: 0 0 52px 0;
 }
 
+.locationTextBlockMap a{
+  font-size: 24px;
+  font-family: 'fira_sanslight';
+  color: #000;
+}
+
 .mapBlockMap {
 	text-align: center;
 	font-size: 0;
