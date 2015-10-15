@@ -372,6 +372,16 @@ input[type="text"] {
 	letter-spacing: 9px;
 }
 
+.btnRegister .message {
+	display: inline-block;
+	line-height: 36px;
+	font-family: 'fira_monoregular';
+	font-size: 30px;
+	color: #33cc00;
+	text-decoration: none;
+	padding: 20px 40px 0;
+}
+
 .btnRegister a:active {
 	color: #f0db4f;
 	border-color: #f0db4f;
