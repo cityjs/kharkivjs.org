@@ -599,6 +599,11 @@ a.picsio{
   height: 200px;
 }
 
+a.picsio:after{
+  content: '\A';
+  white-space: pre;
+}
+
 a.picsio img{
   width: 400px;
   display: inline-block;
