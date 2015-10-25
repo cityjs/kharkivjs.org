@@ -348,11 +348,6 @@ input[type="text"] {
   margin: 0 8px;
 }
 
-.eventInfo .highlight,
-.descSpeakerItem .highlight {
-	color: #f0db4f;
-}
-
 .btnRegister {
 	text-align: center;
 	font-size: 0;
@@ -563,6 +558,12 @@ input[type="text"] {
 	font-family: 'fira_monoregular';
 	font-size: 18px;
 	color: #fff;
+}
+
+.tablePartSchedule table tr td.highlight,
+.eventInfo .highlight,
+.descSpeakerItem .highlight {
+	color: #f0db4f;
 }
 
 .blockPartners {
