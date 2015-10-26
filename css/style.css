@@ -619,10 +619,26 @@ a.dataart:after {
     white-space: pre;
 }
 
+a.waverly img{
+  width: 400px;
+  display: inline-block;
+}
+
+a.cleveroad:after{
+  content: '\A';
+  white-space: pre;
+}
+
+a.cleveroad img{
+  width: 400px;
+  display: inline-block;
+}
+
 a.cryptoneat:after {
   content: '\A';
   white-space: pre;
 }
+
 
 a.dataart img{
 	width: 400px;
