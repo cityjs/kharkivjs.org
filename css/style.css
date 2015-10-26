@@ -348,11 +348,6 @@ input[type="text"] {
   margin: 0 8px;
 }
 
-.eventInfo .highlight,
-.descSpeakerItem .highlight {
-	color: #f0db4f;
-}
-
 .btnRegister {
 	text-align: center;
 	font-size: 0;
@@ -540,7 +535,7 @@ input[type="text"] {
 
 .tablePartSchedule table tr:last-child:first-child td {
 	background: none;
-	padding: 6px 0 5px 0;
+	/*padding: 6px 0 5px 0;*/
 }
 
 .tablePartSchedule table tr td:nth-child(1) {
@@ -563,6 +558,16 @@ input[type="text"] {
 	font-family: 'fira_monoregular';
 	font-size: 18px;
 	color: #fff;
+}
+.tablePartSchedule table thead tr td,
+.tablePartSchedule table thead tr td:nth-child(1) {
+	color: #fff;
+}
+
+.tablePartSchedule table tr td.highlight,
+.eventInfo .highlight,
+.descSpeakerItem .highlight {
+	color: #f0db4f;
 }
 
 .blockPartners {
