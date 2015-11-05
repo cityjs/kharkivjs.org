@@ -636,6 +636,11 @@ a.waverly img{
   display: inline-block;
 }
 
+a.waverly:after{
+  content: '\A';
+  white-space: pre;
+}
+
 a.cleveroad:after{
   content: '\A';
   white-space: pre;
@@ -651,6 +656,15 @@ a.cryptoneat:after {
   white-space: pre;
 }
 
+a.sigma:after {
+  content: '\A';
+  white-space: pre;
+}
+
+a.sigma img{
+  width: 400px;
+  display: inline-block;
+}
 
 a.dataart img{
 	width: 400px;
@@ -660,6 +674,11 @@ a.dataart img{
 a.cryptoneat img{
   width: 400px;
   display: inline-block;
+}
+
+a.eleks:after {
+  content: '\A';
+  white-space: pre;
 }
 
 .titlePartnersCategory {
