@@ -263,6 +263,13 @@ input[type="text"] {
 	margin: 0 1px 0 15px;
 }
 
+.socialYoutube {
+	background: url('../img/youtube_icon.png') no-repeat left top;
+  background-size: 24px;
+	width: 24px;
+	height: 24px;
+	display: block;
+}
 .socialGitter {
 	background: url('../img/gitter_icon.png') no-repeat left top;
 	width: 24px;
