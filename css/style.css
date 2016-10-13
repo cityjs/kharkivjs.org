@@ -157,6 +157,12 @@ a {
 	color: #f0db4f;
 }
 
+a.highlight {
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: 600;
+}
+
 a:hover {
 	text-decoration: none;
 }
@@ -263,6 +269,13 @@ input[type="text"] {
 	margin: 0 1px 0 15px;
 }
 
+.socialYoutube {
+	background: url('../img/youtube_icon.png') no-repeat left top;
+  background-size: 24px;
+	width: 24px;
+	height: 24px;
+	display: block;
+}
 .socialGitter {
 	background: url('../img/gitter_icon.png') no-repeat left top;
 	width: 24px;
@@ -286,7 +299,7 @@ input[type="text"] {
 
 .eventInfo {
 	display: block;
-	width: 290px;
+	width: 500px;
 	margin: 0 auto;
 	text-align: left;
 	font-family: 'fira_sansbold';
