@@ -214,7 +214,7 @@ input[type="text"] {
 	text-decoration: none;
 	padding: 10px 0 0 0;
 	height: 40px;
-	line-height: 40px;
+	line-height: 30px;
 	font-family: 'fira_sansregular';
 }
 
@@ -325,7 +325,7 @@ input[type="text"] {
 	display: inline-block;
 	vertical-align: top;
 	width: 33.3%;
-	padding-bottom: 32px;
+	padding: 32px 0;
 }
 
 .innerItemSpeaker {
@@ -413,6 +413,11 @@ input[type="text"] {
 	border: 2px solid #FF8000;
 	padding: 0 40px;
 	letter-spacing: 9px;
+}
+
+.btnRegister.feedback a:hover {
+	color: #191919;
+	background: #FF8000;
 }
 
 .blockMap {
