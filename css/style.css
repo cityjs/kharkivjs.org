@@ -363,6 +363,12 @@ input[type="text"] {
 	color: #fff;
 }
 
+.lang {
+	width: 20px;
+	vertical-align: middle;
+	margin-top: -2px;
+}
+
 .nameSpeakerItem,
 .descSpeakerItem {
   margin: 0 8px;
