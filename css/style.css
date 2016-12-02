@@ -584,6 +584,9 @@ input[type="text"] {
 	width: 200px;
 	padding-right: 20px;
 }
+.discussions .tablePartSchedule table tr td:nth-child(2) {
+  width:auto;
+}
 
 .tablePartSchedule table tr td:nth-child(3) {
 	font-family: 'fira_monoregular';
