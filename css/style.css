@@ -218,16 +218,20 @@ input[type="text"] {
 	font-family: 'fira_sansregular';
 }
 
+.mainMenu ul li a:hover {
+    text-decoration: underline;
+}
+
 /*****************/
 /*****CONTENT*****/
 /*****************/
 
 #main {
-
+    height: 100%;
 }
 
 #content {
-
+    height: 100%;
 }
 
 .titleBlock {
@@ -243,18 +247,72 @@ input[type="text"] {
 	letter-spacing: 5px;
 }
 
-.blockInfo {
-	background: #191919 url('../img/photo_bg.jpg') no-repeat center bottom;
-	min-height: 600px;
+.landing-banner {
+	background: #fff url('../img/photo_bg.jpg') no-repeat center 30%;
+    height: 40%;
 	padding: 25px 0 0 0;
-	text-align: center;
+    background-size: cover;
+    position: relative;
+}
+
+.landing-banner-content {
+    position: absolute;
+    bottom: 30px;
+    left: 10%;
+}
+
+.kharkivjs-logo {
+    text-decoration: none;
+    color: #fff;
+}
+
+.kharkivjs-logo .kharkivjs-logo-city-text {
+    font-size: 48px;
+    font-family: 'fira_sansbold';
+}
+
+.kharkivjs-logo .kharkivjs-logo-js-text {
+    color: #f0db4f;
+    font-size: 48px;
+    font-family: 'fira_sansbold';
+}
+
+.kharkivjs-largest-event-text {
+    padding-top: 8px;
+    display: block;
+    color: #fff;
+    font-size: 18px;
+}
+
+.kharkivjs-register {
+    display: inline-block;
+    margin-top: 40px;
+}
+
+.kharkivjs-register-date {
+    color: #fff;
+    font-size: 22px;
+    display: block;
+}
+
+.kharkivjs-register-cta {
+    text-decoration: none;
+    background-color: #e6d355;
+    border-radius: 30px;
+    font-size: 22px;
+    color: #fff;
+    padding: 12px 25px;
+    margin-top: 15px;
+    margin-left: -5px;
+    display: inline-block;
+}
+
+.kharkivjs-register-cta:hover {
+    text-decoration: underline;
 }
 
 .eventSocial {
-	width: 300px;
-	text-align: right;
-	margin: 0 auto;
-	padding: 17px 0 24px 0;
+	display: inline-block;
 }
 
 .eventSocial ul,
@@ -266,7 +324,7 @@ input[type="text"] {
 
 .eventSocial ul li {
 	display: inline-block;
-	margin: 0 1px 0 15px;
+	margin: 7px 0 0 12px;
 }
 
 .socialYoutube {
@@ -295,18 +353,6 @@ input[type="text"] {
 	width: 11px;
 	height: 24px;
 	display: block;
-}
-
-.eventInfo {
-	display: block;
-	width: 500px;
-	margin: 0 auto;
-	text-align: left;
-	font-family: 'fira_sansbold';
-	font-size: 22px;
-	color: #fff;
-	padding: 0 0 18px 0;
-	letter-spacing: 6px;
 }
 
 .blockSpeakers {
@@ -599,7 +645,6 @@ input[type="text"] {
 }
 
 .tablePartSchedule table tr td.highlight,
-.eventInfo .highlight,
 .descSpeakerItem .highlight {
 	color: #f0db4f;
 }
