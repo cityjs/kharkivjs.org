@@ -372,7 +372,6 @@ input[type="text"] {
 }
 
 .past-events-block-summary,
-.community-tribute-block-picture,
 .community-tribute-block-summary
 {
     display: inline-block;
@@ -396,6 +395,9 @@ input[type="text"] {
 .past-events-block-picture-link {
     margin-top: 5px;
 }
+.past-events-block-picture-link a {
+    font-size: 18px;
+}
 
 .past-events-block-speakers-count {
     font-size: 24px;
@@ -418,7 +420,8 @@ input[type="text"] {
 }
 
 .community-tribute-block-picture img {
-    width: 275px;
+    max-width: 275px;
+    width: 30%;
 }
 
 .community-tribute-block-members-count {
