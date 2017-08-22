@@ -227,11 +227,11 @@ input[type="text"] {
 /*****************/
 
 #main {
-    height: 100%;
+
 }
 
 #content {
-    height: 100%;
+
 }
 
 .titleBlock {
@@ -247,9 +247,10 @@ input[type="text"] {
 	letter-spacing: 5px;
 }
 
+
 .landing-banner {
-	background: #fff url('../img/photo_bg.jpg') no-repeat center 30%;
-    height: 40%;
+	background: #fff url('../img/photo_bg.jpg') no-repeat center 60%;
+    height: 350px;
 	padding: 25px 0 0 0;
     background-size: cover;
     position: relative;
@@ -297,8 +298,7 @@ input[type="text"] {
 
 .kharkivjs-register-cta {
     text-decoration: none;
-    background-color: #e6d355;
-    border-radius: 30px;
+    background-color: #f0db4f;
     font-size: 22px;
     color: #fff;
     padding: 12px 25px;
@@ -307,7 +307,18 @@ input[type="text"] {
     display: inline-block;
 }
 
-.kharkivjs-register-cta:hover {
+.kharkivjs-speaker-cta {
+    text-decoration: none;
+    font-size: 22px;
+    padding: 12px 25px;
+    margin-top: 15px;
+    margin-left: -5px;
+    display: inline-block;
+    border: 1px solid #f0db4f;
+}
+
+.kharkivjs-register-cta:hover,
+.kharkivjs-speaker-cta:hover {
     text-decoration: underline;
 }
 
@@ -353,6 +364,71 @@ input[type="text"] {
 	width: 11px;
 	height: 24px;
 	display: block;
+}
+
+.past-events-block,
+.community-tribute-block {
+    padding: 30px 10%;
+}
+
+.past-events-block-summary,
+.community-tribute-block-picture,
+.community-tribute-block-summary
+{
+    display: inline-block;
+}
+
+.past-events-block-summary {
+    width: 250px;
+    text-align: right;
+    float: left;
+}
+
+.past-events-block-picture {
+    margin-left: 250px;
+}
+
+.past-events-block-picture img {
+    width: 30%;
+    max-width: 320px;
+}
+
+.past-events-block-picture-link {
+    margin-top: 5px;
+}
+
+.past-events-block-speakers-count {
+    font-size: 24px;
+}
+
+.past-events-block-days-stages-count {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.past-events-block-visitors-count {
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.past-events-block-picture,
+.community-tribute-block-summary {
+    padding-left: 30px;
+}
+
+.community-tribute-block-picture img {
+    width: 275px;
+}
+
+.community-tribute-block-members-count {
+    font-size: 24px;
+}
+
+.community-tribute-block-years-count {
+    font-size: 28px;
+    font-weight: bold;
+    padding-top: 10px;
 }
 
 .blockSpeakers {
