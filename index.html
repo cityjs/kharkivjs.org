@@ -15,7 +15,7 @@
 			height: 500px;
 		}
 	</style>
-	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js" defer></script>
 	<script>
 		function initialize() {
 			var mapCanvas = document.getElementById('map-canvas');
@@ -40,7 +40,7 @@
 			});
 		}
 
-		google.maps.event.addDomListener(window, 'load', initialize);
+		document.addEventListener('DOMContentLoaded', initialize);
 	</script>
 </head>
 <body>
