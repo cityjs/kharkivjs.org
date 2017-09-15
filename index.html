@@ -15,7 +15,7 @@
 			height: 500px;
 		}
 	</style>
-	<script src="https://maps.googleapis.com/maps/api/js" defer></script>
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
 	<script>
 		function initialize() {
 			var mapCanvas = document.getElementById('map-canvas');
@@ -40,7 +40,7 @@
 			});
 		}
 
-		document.addEventListener('DOMContentLoaded', initialize);
+		google.maps.event.addDomListener(window, 'load', initialize);
 	</script>
 </head>
 <body>
@@ -349,7 +349,7 @@ CRDT, OT, Offline</span>
 						<span class="titlePartnersCategory">Gold Partners</span>
 						
 						<a class = "devpro" href = "https://zone3000.net/" style = 'display: block;' target = "_blank">
-							<img class = "devpro" src="https://hc.namecheap.net/files/1/1134/4DvhN7zQz9Xgppg/zone.png" />
+							<img class = "devpro" src="img/partners/zone.png" />
 						</a>
 						
 					</div>
