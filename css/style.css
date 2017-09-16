@@ -306,7 +306,8 @@ input[type="text"] {
     text-decoration: none;
     background-color: #e6d24d;
     font-size: 22px;
-    color: #fff;
+    color: #000;
+    font-weight: bold;
     padding: 20px 55px;
     margin-top: 15px;
     margin-left: -5px;
