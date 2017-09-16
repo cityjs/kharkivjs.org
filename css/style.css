@@ -304,23 +304,13 @@ input[type="text"] {
 
 .kharkivjs-register-cta {
     text-decoration: none;
-    background-color: #f0db4f;
+    background-color: #e6d24d;
     font-size: 22px;
     color: #fff;
-    padding: 12px 25px;
+    padding: 20px 55px;
     margin-top: 15px;
     margin-left: -5px;
     display: inline-block;
-}
-
-.kharkivjs-speaker-cta {
-    text-decoration: none;
-    font-size: 22px;
-    padding: 12px 25px;
-    margin-top: 15px;
-    margin-left: -5px;
-    display: inline-block;
-    border: 1px solid #f0db4f;
 }
 
 .kharkivjs-register-cta:hover,
