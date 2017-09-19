@@ -476,7 +476,7 @@ input[type="text"] {
 }
 
 @media only screen 
-and (min-device-width : 768px) {
+and (min-device-width : 1280px) {
     .speaker-item {
         width: 45%;
         display: inline-block;
