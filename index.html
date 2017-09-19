@@ -17,31 +17,31 @@
 	</style>
 	<script src="https://maps.googleapis.com/maps/api/js"></script>
 	<script>
-		function initialize() {
-			var mapCanvas = document.getElementById('map-canvas');
-			var myLatlng = new google.maps.LatLng(49.98935276, 36.22232348);
-			var mapOptions = {
-				center: myLatlng,
-				zoom: 5,
-				mapTypeControl: false,
-				draggable: true,
-				scaleControl: false,
-				scrollwheel: false,
-				navigationControl: false,
-				streetViewControl: false,
-				mapTypeId: google.maps.MapTypeId.ROADMAP
-			}
-			var map = new google.maps.Map(mapCanvas, mapOptions)
+	function initialize() {
+  var mapCanvas = document.getElementById('map-canvas');
+  var myLatlng = new google.maps.LatLng(49.98935276, 36.22232348);
+  var mapOptions = {
+    center: myLatlng,
+    zoom: 5,
+    mapTypeControl: false,
+    draggable: true,
+    scaleControl: false,
+    scrollwheel: false,
+    navigationControl: false,
+    streetViewControl: false,
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+  };
+  var map = new google.maps.Map(mapCanvas, mapOptions);
 
-			var marker = new google.maps.Marker({
-				position: myLatlng,
-				map: map,
-				title: 'Kharkiv',
-			});
-		}
+  var marker = new google.maps.Marker({
+    position: myLatlng,
+    map: map,
+    title: 'Kharkiv',
+  });
+}
 
-		google.maps.event.addDomListener(window, 'load', initialize);
-	</script>
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
 </head>
 <body>
 
@@ -99,7 +99,7 @@
 					announced
 				</div>
 				<div class="speakers-block-list">
-					
+
 					<div class="speaker-item">
 						<div class="speaker-item-photo">
 							<img src="img/speakers/alexandar_simovich.jpg" />
@@ -108,7 +108,7 @@
 							<div class="speaker-item-info-name">Aleksandar Simovic</div>
 							<div class="speaker-item-info-title"><b>JSBelgrade</b> meetup co-organizer,<br /> Claudia.js &amp; Claudia Bot Builder coauthor</div>
 							<div class="speaker-item-info-origin">Belgrade, Serbia</div>
-							
+
 							<div class="speaker-item-info-topic">
 								<div class="speaker-item-info-topic-label">Talk:</div>
 								<div class="speaker-item-info-topic-name">Effortless Serverless</div>
@@ -123,7 +123,7 @@
 							<div class="speaker-item-info-name">Asim Hussain</div>
 							<div class="speaker-item-info-title">Cloud Developer Advocate at <b>Microsoft</b></div>
 							<div class="speaker-item-info-origin">London, United Kingdom</div>
-							
+
 							<div class="speaker-item-info-topic">
 								<div class="speaker-item-info-topic-label">Talk:</div>
 								<!-- <div class="speaker-item-info-topic-name">How to hack a node app</div> -->
@@ -139,7 +139,7 @@
 							<div class="speaker-item-info-name">Oleg Slobodskoi</div>
 							<div class="speaker-item-info-title">Lead Front-End Engineer at <b>ChatGrape</b>,<br />Creator of <b>cssinjs.org</b>  and <b>lingvo.tv</b></div>
 							<div class="speaker-item-info-origin">Berlin, Germany</div>
-							
+
 							<div class="speaker-item-info-topic">
 								<div class="speaker-item-info-topic-label">Talk:</div>
 								<div class="speaker-item-info-topic-name">UVP and the future of CSSinJS</div>
@@ -154,7 +154,7 @@
 							<div class="speaker-item-info-name">Denis Radin</div>
 							<div class="speaker-item-info-title">Front-end engineer at <b>Liberty Global</b>,<br />Host of <b>ReactAmsterdam</b> and <b>AmsterdamJS</b></div>
 							<div class="speaker-item-info-origin">Amsterdam, Netherlands</div>
-							
+
 							<div class="speaker-item-info-topic">
 								<div class="speaker-item-info-topic-label">Talk:</div>
 								<div class="speaker-item-info-topic-name">Pixel shaders for Web developers</div>
@@ -169,7 +169,7 @@
 							<div class="speaker-item-info-name">Sergey Popov</div>
 							<div class="speaker-item-info-title">Frontend developer, mentor,<br />Founder of <b>MoscowCss</b> community</div>
 							<div class="speaker-item-info-origin">Moscow, Russia</div>
-							
+
 							<div class="speaker-item-info-topic">
 								<div class="speaker-item-info-topic-label">Talk:</div>
 								<div class="speaker-item-info-topic-name">А что если мы долетим и там будет всё?</div>
@@ -184,7 +184,7 @@
 							<div class="speaker-item-info-name">Timur Shemsedinov</div>
 							<div class="speaker-item-info-title">Software Architect at <b>Metarhia</b></div>
 							<div class="speaker-item-info-origin">Kyiv, Ukraine</div>
-							
+
 							<div class="speaker-item-info-topic">
 								<div class="speaker-item-info-topic-label">Talk:</div>
 								<div class="speaker-item-info-topic-name">Async programming with JavaScript and Node.js</div>
@@ -199,7 +199,7 @@
 							<div class="speaker-item-info-name">Valerii Sorokobatko</div>
 							<div class="speaker-item-info-title">Software Architect at <b>Plarium</b></div>
 							<div class="speaker-item-info-origin">Kharkiv, Ukraine</div>
-							
+
 							<div class="speaker-item-info-topic" style="display: none;">
 								<div class="speaker-item-info-topic-label">Talk:</div>
 								<div class="speaker-item-info-topic-name">Soon...</div>
@@ -214,7 +214,7 @@
 							<div class="speaker-item-info-name">Max Klymyshyn</div>
 							<div class="speaker-item-info-title">CTO at <b>GVMachines Inc.</b></div>
 							<div class="speaker-item-info-origin">Kyiv, Ukraine</div>
-							
+
 							<div class="speaker-item-info-topic">
 								<div class="speaker-item-info-topic-label">Talk:</div>
 								<div class="speaker-item-info-topic-name">Groupware Systems for fun and profit CRDT, OT, Offline</div>
@@ -229,7 +229,7 @@
 							<div class="speaker-item-info-name">Nick Lototskiy</div>
 							<div class="speaker-item-info-title">Technology Expert at <b>Dev-Pro.net</b></div>
 							<div class="speaker-item-info-origin">Kyiv, Ukraine</div>
-							
+
 							<div class="speaker-item-info-topic">
 								<div class="speaker-item-info-topic-label">Talk:</div>
 								<div class="speaker-item-info-topic-name">Async exception handling or when something goes wrong.</div>
@@ -244,7 +244,7 @@
 							<div class="speaker-item-info-name">Vladimir Polyakov</div>
 							<div class="speaker-item-info-title">Web developer at <b>Forma-Pro</b></div>
 							<div class="speaker-item-info-origin">Kharkiv, Ukraine</div>
-							
+
 							<div class="speaker-item-info-topic">
 								<div class="speaker-item-info-topic-label">Talk:</div>
 								<div class="speaker-item-info-topic-name">How to be a 10x JavaScript developer.</div>
@@ -259,7 +259,7 @@
 							<div class="speaker-item-info-name">Illya Klymov</div>
 							<div class="speaker-item-info-title">CEO at <b>WookieeLabs</b></div>
 							<div class="speaker-item-info-origin">Kharkiv, Ukraine</div>
-							
+
 							<div class="speaker-item-info-topic">
 								<div class="speaker-item-info-topic-label">Talk:</div>
 								<div class="speaker-item-info-topic-name">Copy-pASTe</div>
@@ -274,7 +274,7 @@
 							<div class="speaker-item-info-name">Georgii Podsvetov</div>
 							<div class="speaker-item-info-title">Practice Director UI Technologies at <b>Grid Dynamics</b></div>
 							<div class="speaker-item-info-origin">Lviv, Ukraine</div>
-							
+
 							<div class="speaker-item-info-topic" style="display: none;">
 								<div class="speaker-item-info-topic-label">Talk:</div>
 								<div class="speaker-item-info-topic-name">Soon...</div>
@@ -289,7 +289,7 @@
 							<div class="speaker-item-info-name">Denys Dovhan</div>
 							<div class="speaker-item-info-title">Software Consultant at <b>Hell Yeah LLC</b></div>
 							<div class="speaker-item-info-origin">Chernivtsi, Ukraine</div>
-							
+
 							<div class="speaker-item-info-topic">
 								<div class="speaker-item-info-topic-label">Talk:</div>
 								<div class="speaker-item-info-topic-name">Web VR</div>
@@ -304,7 +304,7 @@
 							<div class="speaker-item-info-name">Yuzva Maksim</div>
 							<div class="speaker-item-info-title">Head of frontend department at <b>LOVATA LLC</b></div>
 							<div class="speaker-item-info-origin">Minsk, Belarus</div>
-							
+
 							<div class="speaker-item-info-topic">
 								<div class="speaker-item-info-topic-label">Talk:</div>
 								<div class="speaker-item-info-topic-name">Софт скилы</div>
@@ -333,7 +333,7 @@
 						<div class="speaker-item-info">
 							<div class="speaker-item-info-name">Vladimir Dashukevich</div>
 							<div class="speaker-item-info-title">Front-end developer at <b>XBSoftware</b></div>
-							<div class="speaker-item-info-origin">Minsk, Belarus</div>			
+							<div class="speaker-item-info-origin">Minsk, Belarus</div>
 
 							<div class="speaker-item-info-topic">
 								<div class="speaker-item-info-topic-label">Talk:</div>
@@ -383,6 +383,21 @@
 							<div class="speaker-item-info-topic">
 								<div class="speaker-item-info-topic-label">Talk:</div>
 								<div class="speaker-item-info-topic-name">Taking care of performance easiest than ever</div>
+							</div>
+							<div style="clear: both;"></div>
+						</div>
+					</div>
+
+					<div class="speaker-item">
+						<span class="speaker-item-photo"><img src="img/speakers/bugai.jpg" /></span>
+						<div class="speaker-item-info">
+							<div class="speaker-item-info-name">Maksym Bugai</div>
+							<div class="speaker-item-info-title">JavaScript Developer at <b>Plarium</b></div>
+							<div class="speaker-item-info-origin">Kharkiv, Ukraine</div>
+
+							<div class="speaker-item-info-topic">
+								<div class="speaker-item-info-topic-label">Talk:</div>
+								<div class="speaker-item-info-topic-name">Activity tracking for UX protection</div>
 							</div>
 							<div style="clear: both;"></div>
 						</div>
@@ -438,9 +453,9 @@
 			<!-- // What's next? block -->
 
 
-			
 
-			
+
+
 
 			<div id="partners" class="blockPartners">
 				<span class="titleBlock">Partners</span>
@@ -469,15 +484,15 @@
 				<div class="containerPartners">
 					<div class="partnersCategory">
 						<span class="titlePartnersCategory">Gold Partners</span>
-						
+
 						<a class = "devpro" href = "https://zone3000.net/" style = 'display: block;' target = "_blank">
 							<img class = "devpro" src="img/partners/zone.png" />
 						</a>
-						
+
 					</div>
 				</div>
 			</div>
-			
+
 			<!-- end .speakers-->
 
 			<div id = 'place' class="blockMap">
@@ -492,12 +507,20 @@
 	</div><!-- end #main-->
 </div><!-- end #all-->
 <script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-18502589-2', 'auto');
-	ga('send', 'pageview');
+(function(i, s, o, g, r, a, m) {
+  i['GoogleAnalyticsObject'] = r;
+  (i[r] =
+    i[r] ||
+    function() {
+      (i[r].q = i[r].q || []).push(arguments);
+    }), (i[r].l = 1 * new Date());
+  (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+  a.async = 1;
+  a.src = g;
+  m.parentNode.insertBefore(a, m);
+})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+ga('create', 'UA-18502589-2', 'auto');
+ga('send', 'pageview');
 </script>
 </body>
 </html>
