@@ -483,6 +483,32 @@ and (min-device-width : 768px) {
     }
 }
 
+@media only screen 
+and (min-width : 1600px) {
+    .speakers-block-list {
+        padding-left: 80px;
+    }
+
+    .speaker-item {
+        width: 35%;
+        display: inline-block;
+    }
+}
+
+@media only screen 
+and (min-width : 1920px) {
+    .past-events-block,
+    .community-tribute-block,
+    .speakers-block {
+        padding: 40px 7%;
+    }
+
+    .speaker-item {
+        width: 30%;
+        display: inline-block;
+    }
+}
+
 .speaker-item-photo {
     float: left;
     margin-right: 15px;
