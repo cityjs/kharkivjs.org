@@ -366,7 +366,7 @@ input[type="text"] {
 .past-events-block,
 .community-tribute-block,
 .speakers-block {
-    padding: 40px 10%;
+    padding: 40px 5%;
 }
 
 .past-events-block-label {
@@ -473,6 +473,40 @@ input[type="text"] {
 
 .speaker-item {
     padding-bottom: 10px;
+}
+
+@media only screen 
+and (min-device-width : 1280px) {
+    .speaker-item {
+        width: 45%;
+        display: inline-block;
+    }
+}
+
+@media only screen 
+and (min-width : 1600px) {
+    .speakers-block-list {
+        padding-left: 80px;
+    }
+
+    .speaker-item {
+        width: 35%;
+        display: inline-block;
+    }
+}
+
+@media only screen 
+and (min-width : 1920px) {
+    .past-events-block,
+    .community-tribute-block,
+    .speakers-block {
+        padding: 40px 7%;
+    }
+
+    .speaker-item {
+        width: 30%;
+        display: inline-block;
+    }
 }
 
 .speaker-item-photo {
