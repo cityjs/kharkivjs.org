@@ -682,6 +682,11 @@ and (min-width : 1920px) {
 	padding: 35px 0 0 0;
 }
 
+.textBlockMapItem {
+    display: inline-block;
+    padding: 0 20px;
+}
+
 .titleTextBlockMap {
 	display: block;
 	font-family: 'fira_monobold';
