@@ -93,7 +93,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 			</div>
 
 			<!-- ************** SPEAKERS ************** -->
-			<div class="speakers-block">
+			<div id="speakers" class="speakers-block">
 				<div class="speakers-block-label">
 					Speakers<br />
 					announced
@@ -435,8 +435,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 				</div>
 			</div>
 
-			<div class="past-events-block">
-				<a name="event"></a>
+			<div id="event" class="past-events-block">
 				<div class="past-events-block-label">
 					Highlights from 2016 event
 				</div>
@@ -523,48 +522,49 @@ google.maps.event.addDomListener(window, 'load', initialize);
  				</div>
 			</div>
 
-			<!-- // What's next? block -->
+			<div id="partners" class="partners-block">
+				<div class="partners-block-label">Special thanks to our partners</div>
 
+				<div class="partners-block-text">
+				With help of these great and JavaScript-friendly companies we make each upcoming event better than previous.<br />
+				Even so, there are still lots of work we want to do next.<br />
+				<br />
+				Please <a href="#contact">contact us</a> if you want to join as a partner company and help make event better.
+				</div>
 
-
-
-
-
-			<div id="partners" class="blockPartners">
-				<span class="titleBlock">Partners</span>
-				<div class="containerPartners">
-					<div class="partnersCategory">
-						<span class="titlePartnersCategory">Co-Organizers</span>
+				<div class="partners-block-section">
+					<div class="partners-block-section-label">Co-Organizers</div>
+					<div class="partners-block-section-partners">
 						<a class = "devpro" href = "http://www.dev-pro.net/" target = "_blank">
 							<img class = "devpro" src="img/partners/devpro.jpg" />
 						</a>
 					</div>
 				</div>
-				<div class="containerPartners">
-					<div class="partnersCategory">
-						<span class="titlePartnersCategory">General Partners</span>
-						<a class = "devpro" href = "http://www.dataart.com/" style = 'display: block;' target = "_blank">
+
+				<div class="partners-block-section">
+					<div class="partners-block-section-label">General Partners</div>
+					<div class="partners-block-section-partners">
+						<a class = "devpro" href = "http://www.dataart.com/" target = "_blank">
 							<img class = "devpro" src="img/partners/dataartpart.jpg" />
 						</a>
-						<a class = "devpro" href = "https://www.softserveinc.com" style = 'display: block;' target = "_blank">
+						<a class = "devpro" href = "https://www.softserveinc.com" target = "_blank">
 							<img class = "devpro" src="img/partners/softserve.png" />
 						</a>
-						<a class = "devpro" href = "https://www.studytube.nl/" style = 'display: block;' target = "_blank">
+						<a class = "devpro" href = "https://www.studytube.nl/" target = "_blank">
 							<img class = "devpro" src="img/partners/Studytube_Logo_400х88.png" />
 						</a>
-						<a class = "devpro" href = "https://www.evolutiongaming.com/who-we-are" style = 'display: block;' target = "_blank">
+						<a class = "devpro" href = "https://www.evolutiongaming.com/who-we-are" target = "_blank">
 							<img class = "devpro" src="img/partners/evo.png" />
 						</a>
 					</div>
 				</div>
-				<div class="containerPartners">
-					<div class="partnersCategory">
-						<span class="titlePartnersCategory">Gold Partners</span>
 
-						<a class = "devpro" href = "https://zone3000.net/" style = 'display: block;' target = "_blank">
+				<div class="partners-block-section">
+					<div class="partners-block-section-label">Gold Partners</div>
+					<div class="partners-block-section-partners">
+						<a href = "https://zone3000.net/" target = "_blank">
 							<img class = "devpro" src="img/partners/zone.png" />
 						</a>
-
 					</div>
 				</div>
 			</div>
@@ -574,7 +574,12 @@ google.maps.event.addDomListener(window, 'load', initialize);
 			<div id = 'place' class="blockMap">
 				<div class="textBlockMap">
 					<span class="titleTextBlockMap">Place</span>
-					<div class="locationTextBlockMap">Blagovischenska Street, 1 <br />  <a href = "http://fabrika.space">"Fabrika Space"<a><br />October 28 - 29, 2017<br />myzlio@gmail.com</div>
+					<div class="locationTextBlockMap">Blagovischenska Street, 1 <br />  <a href = "http://fabrika.space">"Fabrika Space"<a><br />October 28 - 29, 2017</div>
+
+					<span id="contact" class="titleTextBlockMap">Contact</span>
+					<div class="locationTextBlockMap">
+					myzlio@gmail.com
+					</div>
 				</div>
 			</div>
 

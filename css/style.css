@@ -365,11 +365,14 @@ input[type="text"] {
 
 .past-events-block,
 .community-tribute-block,
-.speakers-block {
+.speakers-block,
+.partners-block {
     padding: 40px 5%;
 }
 
-.past-events-block-label {
+.past-events-block-label,
+.partners-block-label
+ {
     padding: 0 40px;
     padding-bottom: 40px;
     margin-left: 255px;
@@ -383,7 +386,8 @@ input[type="text"] {
 
 .past-events-block-summary,
 .speakers-block-label,
-.community-tribute-block-summary {
+.community-tribute-block-summary,
+.partners-block-section-label {
     width: 250px;
     text-align: right;
     display: table-cell;
@@ -392,7 +396,8 @@ input[type="text"] {
 
 .past-events-block-picture,
 .community-tribute-block-picture,
-.community-tribute-block-timeline {
+.community-tribute-block-timeline,
+.partners-block-section-partners {
     display: table-cell;
     vertical-align: middle;
 }
@@ -500,6 +505,29 @@ input[type="text"] {
     background: #649e64;
 }
 
+.partners-block-label {
+    background: #f1f1f1;
+    padding-top: 20px;
+}
+
+.partners-block-text {
+    margin-left: 255px;
+    padding: 0 40px;
+    font-size: 16px;
+    background: #f1f1f1;
+    padding-bottom: 20px;
+}
+
+.partners-block-section {
+    padding-top: 80px;
+}
+
+.partners-block-section-label {
+    font-size: 24px;
+    vertical-align: top;
+    padding-top: 32px;
+}
+
 @media only screen 
 and (min-device-width : 1280px) {
     .speaker-item {
@@ -524,7 +552,8 @@ and (min-width : 1600px) {
 and (min-width : 1920px) {
     .past-events-block,
     .community-tribute-block,
-    .speakers-block {
+    .speakers-block,
+    .partners-block {
         padding: 40px 7%;
     }
 
@@ -826,14 +855,8 @@ and (min-width : 1920px) {
 }
 
 .blockPartners .titleBlock {
-	background: #e3dfc6;
-	color: #000;
-}
-
-.containerPartners {
 	background: #e0e0e0;
-	text-align: center;
-	padding: 50px 0;
+	color: #000;
 }
 
 .partnersCategory {
