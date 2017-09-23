@@ -390,13 +390,9 @@ input[type="text"] {
     vertical-align: middle;
 }
 
-.community-tribute-block-summary
-{
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.past-events-block-picture {
+.past-events-block-picture,
+.community-tribute-block-picture,
+.community-tribute-block-timeline {
     display: table-cell;
     vertical-align: middle;
 }
@@ -436,7 +432,8 @@ input[type="text"] {
 }
 
 .past-events-block-picture,
-.community-tribute-block-picture {
+.community-tribute-block-picture,
+.community-tribute-block-timeline {
     padding-left: 40px;
 }
 
@@ -445,15 +442,11 @@ input[type="text"] {
     padding-bottom: 30px;
 }
 
-.community-tribute-block-picture {
-    display: inline-block;
-}
-
 .community-tribute-block-picture img {
-    max-width: 275px;
+    max-width: 600px;
     width: 100%;
-    vertical-align: middle;
     border: 3px solid #e6e6e6;
+    vertical-align: middle;
 }
 
 .community-tribute-block-members-count {
@@ -473,6 +466,38 @@ input[type="text"] {
 
 .speaker-item {
     padding-bottom: 10px;
+}
+
+.community-tribute-block-timeline {
+    width: 72%;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.community-tribute-block-timeline-line {
+    width: 91%;
+    display: inline-block;
+    border-bottom: 2px solid #dbdbdb;
+}
+
+.community-tribute-block-timeline-item {
+    width: 12.5%;
+    display: inline-block;
+    text-align: center;
+}
+
+.community-tribute-block-timeline-bullet {
+    border: 2px solid #dbdbdb;
+    background: #f5f5f5;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    margin-top: -24px;
+    display: inline-block;
+}
+
+.community-tribute-block-timeline-item-next .community-tribute-block-timeline-bullet {
+    background: #649e64;
 }
 
 @media only screen 
