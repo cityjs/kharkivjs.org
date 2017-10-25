@@ -29,14 +29,14 @@
     scrollwheel: false,
     navigationControl: false,
     streetViewControl: false,
-    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
   };
   var map = new google.maps.Map(mapCanvas, mapOptions);
 
   var marker = new google.maps.Marker({
     position: myLatlng,
     map: map,
-    title: 'Kharkiv',
+    title: 'Kharkiv'
   });
 }
 
@@ -570,8 +570,20 @@ google.maps.event.addDomListener(window, 'load', initialize);
 							<div style="clear: both;"></div>
 						</div>
 					</div>
+					<div class="speaker-item">
+						<span class="speaker-item-photo"><img src="img/speakers/julia-savinkova.jpg" /></span>
+						<div class="speaker-item-info">
+							<div class="speaker-item-info-name">Julia Savinkova</div>
+							<div class="speaker-item-info-title">Full-stack software engineer, <b>Materialise</b></div>
+							<div class="speaker-item-info-origin">Kyiv, Ukraine</div>
 
-
+							<div class="speaker-item-info-topic">
+								<div class="speaker-item-info-topic-label">Talk:</div>
+								<div class="speaker-item-info-topic-name">Three.js, Back to the Future</div>
+							</div>
+							<div style="clear: both;"></div>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div id="agenda" class="blockSchedule">
@@ -687,8 +699,6 @@ google.maps.event.addDomListener(window, 'load', initialize);
 				</div>
 			</div>
 
-			
-
 			<div   class="blockSchedule">
 				<span class="titleBlock">28th of October &dash; Blue stage</span>
 				<div class="containerSchedule">
@@ -794,7 +804,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 									<tr>
 										<td>12:00</td>
 										<td>Julia Savinkova</td>
-										<td>ThreeJS. Back to the future</td>
+										<td>Three.js, Back to the Future</td>
 									</tr>
 									<tr>
 										<td class="highlight">13:00</td>
