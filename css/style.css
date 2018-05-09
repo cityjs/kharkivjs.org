@@ -1,0 +1,138 @@
+input {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	-webkit-border-radius:0;
+	-moz-border-radius:0;
+	border-radius:0;
+}
+
+* {
+  vertical-align: top;
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+}
+
+:focus {outline: none;}
+input[type="submit"]::-moz-focus-inner {border: none;}
+html, body{height:100%; width:100%; margin:0; padding:0;}
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	color: #9C9C9C;
+	line-height: 1;
+	background: #fff;
+}
+
+img {
+	border: none;
+	max-width: 100%;
+	height: auto;
+}
+
+p {
+
+}
+
+a {
+	font-family: inherit;
+	font-size: inherit;
+	color: #7c868f;
+	font-weight: inherit;
+	font-style: inherit;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+ul, ul li {
+
+}
+
+ul {
+
+}
+
+ul li {
+
+}
+
+ul li a{
+
+}
+
+ol {
+
+}
+
+ol li {
+
+}
+
+input[type="text"],
+input[type="password"] {
+
+}
+
+
+/*****************/
+/*****CONTENT*****/
+/*****************/
+
+.wrapper {
+	height: 100%;
+	display: flex;
+}
+
+.actionBar,
+.infoBar {
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 100%;
+}
+
+/******************/
+/****ACTION BAR****/
+/******************/
+.actionBar {
+	background: #000;
+	color: #fff;
+}
+
+.actionBarInner {
+	margin: 0 80px;
+}
+
+/******************/
+/*****INFO BAR*****/
+/******************/
+.infoBar {
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.infoBarInner {
+	margin: 0 80px;
+}
