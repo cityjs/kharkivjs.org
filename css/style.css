@@ -277,9 +277,47 @@ input[type="password"] {
 /*****INFO BAR*****/
 /******************/
 .infoBar {
-	
+	color: #000;
+	position: relative;
 }
 
 .infoBarInner {
 	margin: 0 80px;
 }
+
+.titleContainer {
+	font-size: 42px;
+	margin-bottom: 20px;
+}
+
+.mainMenu {
+	position: sticky;
+	top: 0;
+	width: 100%;
+	padding: 32px 0 8px 0;
+	background: #fff;
+}
+
+.mainMenu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.mainMenu ul li {
+	margin: 0;
+	padding: 0;
+}
+
+.mainMenu ul li a {
+	color: #F34033;
+	border-bottom: 1px solid #DFDFDF;
+	text-decoration: none;
+}
+
+.mainMenu ul li a:hover {
+	border-color: transparent;
+}
+
