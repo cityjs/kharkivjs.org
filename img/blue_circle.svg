@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>🔵</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <text id="text-1" font-family="AppleColorEmoji, Apple Color Emoji" font-size="16" font-weight="normal" line-spacing="48" fill="#000000">
+            <tspan x="183" y="20">🔵</tspan>
+        </text>
+        <filter x="-33.3%" y="-10.4%" width="166.7%" height="129.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="1">
+        <g id="kharkiv_js_1280" transform="translate(-899.000000, -3475.000000)" fill="#000000">
+            <g id="schedule" transform="translate(720.000000, 2016.000000)">
+                <g id="blue" transform="translate(0.000000, 1447.000000)">
+                    <g id="🔵">
+                        <use filter="url(#filter-2)" xlink:href="#text-1"></use>
+                        <use xlink:href="#text-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
