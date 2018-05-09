@@ -1,9 +1,9 @@
 function initialize() {
   var mapCanvas = document.getElementById('map-canvas');
-  var myLatlng = new google.maps.LatLng(49.98935276, 36.22232348);
+  var myLatlng = new google.maps.LatLng(49.98944000, 36.22234348);
   var mapOptions = {
     center: myLatlng,
-    zoom: 5,
+    zoom: 18,
     mapTypeControl: false,
     draggable: true,
     scaleControl: false,
@@ -12,11 +12,28 @@ function initialize() {
     streetViewControl: false,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };
+  
   var map = new google.maps.Map(mapCanvas, mapOptions);
-  var marker = new google.maps.Marker({
-    position: myLatlng,
-    map: map,
-    title: 'Kharkiv'
+  var service = new google.maps.places.PlacesService(map);
+  console.log(google.maps);
+
+  service.getDetails({
+    placeId: 'ChIJ46emx_mgJ0ERg-dtnn8PyQk'
+  }, function(place, status) {
+    
+      var marker = new google.maps.Marker({
+        map: map,
+        position: place.geometry.location
+      });
+      // google.maps.event.addListener(marker, 'click', function() {
+      //   infowindow.setContent('<div><strong>' + place.name + '</strong><br>' +
+      //     'Place ID: ' + place.place_id + '<br>' +
+      //     place.formatted_address + '</div>');
+      //   infowindow.open(map, this);
+      // });
   });
 }
-google.maps.event.addDomListener(window, 'load', initialize);
+
+function initMap() {
+  google.maps.event.addDomListener(window, 'load', initialize);  
+}
