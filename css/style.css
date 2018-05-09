@@ -476,6 +476,43 @@ input[type="password"] {
 }
 
 /******************/
+/*****PARTNERS*****/
+/******************/
+
+.partnersContainer {
+
+}
+
+.partnersText {
+	font-size: 18px;
+	line-height: 32px;
+	margin-bottom: 64px;
+}
+
+.partnersText a {
+	color: #F34033;
+}
+
+.partnerBlockTitle {
+	font-size: 20px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	border-bottom: 1px solid #CCCCCC;
+	margin: 0 -80px;
+	padding: 0 80px 20px 80px;
+}
+
+.listPartners {
+	margin-bottom: 70px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.listPartners .itemPartner {
+	margin: 20px 20px 0 0;
+}
+
+/******************/
 /*****Place*****/
 /******************/
 .mapBlockMap {
