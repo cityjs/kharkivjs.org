@@ -17,3 +17,18 @@ scheduledDaysMeny.forEach(function(el) {
 		scheduledDays.forEach(changeActs.bind(null, currentIndex));
 	});
 });
+
+
+var topMenuItem = document.querySelector('.mainMenu');
+
+topMenuItem.addEventListener('click', function(e, el) {
+	console.log(el);
+	if(e.target.nodeName !== 'A') {
+		return;
+	}
+
+
+	console.log(e);
+	console.log(e.target.dataset.id);
+
+});
