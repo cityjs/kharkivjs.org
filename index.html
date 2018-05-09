@@ -12,6 +12,7 @@
 	<meta property="og:description" content="Kharkiv.js | Javascript conference | Ukrainian Javascript Community">
 
 	<script src="js/gmap.js"></script>
+	<script src="js/smoothScroll.js"></script>
 
 </head>
 <body>
@@ -58,16 +59,16 @@
 
 			<div class="mainMenu">
 				<ul>
-					<li class="act"><a data-id = "speaker" href="#">Speakers</a></li>
-					<li><a data-id = "schedule" href="#">Schedule</a></li>
-					<li><a data-id = "partners" href="#">Partners</a></li>
-					<li><a data-id = "place" href="#">Place</a></li>
+					<li class="act"><a data-id = "speaker" href="#speakerDest">Speakers</a></li>
+					<li><a data-id = "schedule" href="#scheduleDest">Schedule</a></li>
+					<li><a data-id = "partners" href="#partnersDest">Partners</a></li>
+					<li><a data-id = "place" href="#placeDest">Place</a></li>
 					<li class="up"><a data-id = "up" href="#"></a></li>
 				</ul>
 			</div>
 
 			<div class="speakersContainer">
-				<div class="titleContainer">Speakers</div>
+				<div class="titleContainer" id="speakerDest">Speakers</div>
 				<div class="contentContainer">
 					<div class="itemSpeaker">
 						<div class="itemSpeakerTopic">Your first step in JavaScript on hardware</div>
@@ -95,7 +96,7 @@
 			</div>
 
 			<div class="scheduleContainer">
-				<div class="titleContainer">Schedule</div>
+				<div class="titleContainer" id="scheduleDest">Schedule</div>
 				<div class="contentContainer">
 					<div class="scheduledDaysMenu">
 						<ul>
@@ -170,8 +171,9 @@
 			</div>
 
 			<div class="partnersContainer">
-				<div class="titleContainer">Partners</div>
-				<div class="partnersText">With help of these great and JavaScript-friendly companies we make each upcoming event better than previous. Even so, there are still lots of work we want to do next.<br />Please <a href="#">contact us</a> if you want to join as a partner company and help make event better.</div>
+
+				<div class="titleContainer" id="partnersDest">Partners</div>
+				<div class="partnersText">With help of these great and JavaScript-friendly companies we make each upcoming event better than previous. Even so, there are still lots of work we want to do next.Please contact us if you want to join as a partner company and help make event better.</div>
 				<div class="contentContainer">
 
 					<div class="partnerBlockTitle">CO-ORGANIZERS</div>
@@ -217,7 +219,7 @@
 			</div>
 
 			<div class="locationContainer">
-				<div class="titleContainer">Place</div>
+				<div class="titleContainer" id="placeDest">Place</div>
 				
 				<div class="contentContainer">
 					<div class="mapBlockMap">
