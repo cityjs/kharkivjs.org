@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Facebook-color</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="kharkiv_js_1280" transform="translate(-80.000000, -9881.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="left">
+                <g id="footer" transform="translate(80.000000, 9881.000000)">
+                    <g id="social_nav">
+                        <g id="Facebook-color">
+                            <path d="M25.638355,48 L2.649232,48 C1.185673,48 0,46.813592 0,45.350603 L0,2.649211 C0,1.18585 1.185859,0 2.649232,0 L45.350955,0 C46.813955,0 48,1.18585 48,2.649211 L48,45.350603 C48,46.813778 46.813769,48 45.350955,48 L33.119305,48 L33.119305,29.411755 L39.358521,29.411755 L40.292755,22.167586 L33.119305,22.167586 L33.119305,17.542641 C33.119305,15.445287 33.701712,14.01601 36.70929,14.01601 L40.545311,14.014333 L40.545311,7.535091 C39.881886,7.446808 37.604784,7.24957 34.955552,7.24957 C29.424834,7.24957 25.638355,10.625526 25.638355,16.825209 L25.638355,22.167586 L19.383122,22.167586 L19.383122,29.411755 L25.638355,29.411755 L25.638355,48 Z" id="Facebook"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

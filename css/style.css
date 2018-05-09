@@ -18,7 +18,7 @@ input[type="submit"]::-moz-focus-inner {border: none;}
 html, body{height:100%; width:100%; margin:0; padding:0;}
 
 body {
-	font-family: Arial, sans-serif;
+	font-family: 'PingFang SC', sans-serif;
 	font-size: 12px;
 	color: #9C9C9C;
 	line-height: 1;
@@ -111,26 +111,173 @@ input[type="password"] {
 	flex-grow: 1;
 	flex-shrink: 1;
 	flex-basis: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
 }
 
 /******************/
 /****ACTION BAR****/
 /******************/
 .actionBar {
-	background: #000;
+	background: #000 url('../img/background-rhino.png') no-repeat left top;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.actionBarTop,
+.actionBarBottom {
+	padding-top: 35px;
+	margin: 0 80px;
+}
+
+.conferenceDate {
+	font-size: 20px;
+	padding-bottom: 70px;
+}
+
+.conferenceTitle {
+	font-size: 72px;
+	padding-bottom: 10px;
+	margin-left: -4px;
+}
+
+.conferenceTitle span {
+	color: #F0DB53;
+}
+
+.conferenceDesc {
+	font-size: 20px;
+	padding-bottom: 50px;
+}
+
+.uaFlag {
+	background: url('../img/ukraine.svg') no-repeat left top;
+	width: 23px;
+	height: 24px;
+	display: inline-block;
+}
+
+.conferencePrice {
+	padding-bottom: 15px;
+}
+
+.conferencePrice .conferencePriceTitle {
+	display: block;
+	font-size: 14px;
+	color: #F0DB53;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding-bottom: 5px;
+}
+
+.conferencePrice .conferencePriceValue {
+	display: block;
+	font-size: 32px;
+}
+
+.conferencePrice .conferencePriceValue span {
+	font-size: 20px;
+	padding: 2px 5px 0 0;
+	display: inline-block;
+}
+
+.conferenceBtns {
+
+}
+
+.btnRegister {
+	font-size: 17px;
+	color: #000;
+	background: #F0DB53;
+	border-radius: 4px;
+	width: 200px;
+	height: 48px;
+	line-height: 48px;
+	text-align: center;
+	cursor: pointer;
+	text-decoration: none;
+	display: block;
+}
+
+.btnCallPaper {
+	font-size: 17px;
+	width: 200px;
+	height: 48px;
+	line-height: 48px;
+	text-align: center;
+	cursor: pointer;
+	text-decoration: none;
+	display: block;
 	color: #fff;
 }
 
-.actionBarInner {
-	margin: 0 80px;
+.btnCallPaper span {
+	border-bottom: 1px solid #686868;
+}
+
+.btnCallPaper:hover span {
+	border-color: transparent;
+}
+
+.conferenceSocial {
+	display: flex;
+	margin-bottom: 24px;
+}
+
+.conferenceSocial a {
+	margin-right: 40px;
+	width: 48px;
+	height: 48px;
+}
+
+.fb {
+	background: url('../img/fb.svg') no-repeat center;
+}
+
+.tw {
+	background: url('../img/tw.svg') no-repeat center;
+}
+
+.yt {
+	background: url('../img/yt.svg') no-repeat center;
+}
+
+.actionBarMenu {
+	margin-bottom: 40px;
+}
+
+.actionBarMenu ul {
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.actionBarMenu ul li {
+	margin: 0 40px 0 0;
+	padding: 0;
+}
+
+.actionBarMenu ul li a {
+	font-size: 20px;
+	color: #fff;
+	border-bottom: 1px solid #686868;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.actionBarMenu ul li a:hover {
+	color: #F8E71C;
+	border-color: transparent;
 }
 
 /******************/
 /*****INFO BAR*****/
 /******************/
 .infoBar {
-	overflow-x: hidden;
-	overflow-y: auto;
+	
 }
 
 .infoBarInner {
