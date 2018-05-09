@@ -475,7 +475,49 @@ input[type="password"] {
 	flex: 1 1 auto;
 }
 
+/******************/
+/*****Place*****/
+/******************/
+.mapBlockMap {
+	width: 100%;
+}
 
-/******************/
-/*****SPEAKERS*****/
-/******************/
+.mapBlockMap #map-canvas {
+	height: 480px;
+	margin: 0 -80px;
+}
+
+.contactAddressBox {
+	margin-top: 24px;
+	margin-bottom: 8px;
+	color: #F34033;
+	font-size: 20px;
+}
+
+.contactAddressBoxSmall {
+	font-size: 13px;
+	margin-bottom: 24px;
+	
+}
+
+.contactSeparator {
+	margin-bottom: 16px;
+	height: 1px;
+	background: rgba(0,0,0,0.4);
+}
+
+.contactEmailBox {
+	margin-top: 16px;
+	margin-bottom: 12px;
+	font-size: 20px;
+	color: #F34033;
+}
+
+.contactEmailBox span.contactEmail {
+	border-bottom: 1px solid rgba(0,0,0,0.4);
+	display: inline-block;
+}
+
+.contactPhone {
+	font-size: 20px;
+}

@@ -11,7 +11,6 @@
 	<meta property="og:image" content="http://kharkivjs.org/img/banner.png">
 	<meta property="og:description" content="Kharkiv.js | Javascript conference | Ukrainian Javascript Community">
 
-	<script src="https://maps.googleapis.com/maps/api/js"></script>
 	<script src="js/gmap.js"></script>
 
 </head>
@@ -39,9 +38,9 @@
 
 		<div class="actionBarBottom">
 			<div class="conferenceSocial">
-				<a href="#" class="fb"></a>
-				<a href="#" class="tw"></a>
-				<a href="#" class="yt"></a>
+				<a href="https://t.me/kharkivjs" target = "_blank" class="fb"></a>
+				<a href="https://twitter.com/kharkivjs" target = "_blank" class="tw"></a>
+				<a href="https://www.youtube.com/channel/UCYCPt7SWMZa4T8GwkQ-K-0A" target = "_blank" class="yt"></a>
 			</div>
 
 			<div class="actionBarMenu">
@@ -211,13 +210,34 @@
 				</div>
 			</div>
 
+			<div class="locationContainer">
+				<div class="titleContainer">Place</div>
+				
+				<div class="contentContainer">					
+					<div class="mapBlockMap">
+						<div id="map-canvas"></div>
+					</div>
+					<div class="contactAddressBox">Blagovischenska Street, 1</div>
+					<div class="contactAddressBoxSmall">«Fabrika.Space Event Hall</div>
+					<div class="contactSeparator"></div>
+					<div class="contactEmailBox">
+						<span class="contactEmail">myzlio@gmail.com</span>
+					</div>
+					<div class="contactPhone">+38 095 8912989</div>
+				</div>
+			</div>
+
 
 		</div>
 	</div>
 
 </div><!-- end .wrapper-->
 
+
 <script src="js/main.js"></script>
+<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD26HZWb00RwZV4vb1qYwfTAEoLSZVDUxE&libraries=places&callback=initMap">
+</script>
 
 </body>
 </html>
