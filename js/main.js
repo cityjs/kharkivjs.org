@@ -22,15 +22,33 @@ scheduledDaysMeny.forEach(function(el) {
 var topMenuItem = document.querySelector('.mainMenu');
 
 topMenuItem.addEventListener('click', function(e, el) {
-	console.log(el);
+
+	e.preventDefault();
+
 	if(e.target.nodeName !== 'A') {
 		return;
 	}
 
+	var dataId = e.target.dataset.id;
 
-	console.log(e);
-	console.log(e.target.dataset.id);
+	if(dataId === 'up') {
+		document.querySelector(`#speakerDest`).scrollIntoView({ 
+	  		behavior: 'smooth' 
+		});
+		return;
+	}
 
+	var allAnchors = topMenuItem.querySelectorAll('li');
+	allAnchors.forEach(function(a){ return a.classList.remove('act')});
+
+	var target = e.target;
+	target.parentNode.classList.add('act');
+
+	var scrollTarget = document.querySelector(`#${dataId}Dest`);
+
+	scrollTarget.scrollIntoView({
+		behavior: 'smooth'
+	});
 });
 
 
@@ -44,9 +62,9 @@ var ElBtnSandwich = document.querySelector('.btnSandwich');
 ElCloseMobileMenu.addEventListener('click', function() {
 	ElMobileMenu.classList.remove('act');
 	document.body.style.overflow = '';
-})
+});
 
 ElBtnSandwich.addEventListener('click', function() {
 	ElMobileMenu.classList.add('act');
 	document.body.style.overflow = 'hidden';
-})
+});
