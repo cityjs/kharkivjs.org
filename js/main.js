@@ -32,3 +32,21 @@ topMenuItem.addEventListener('click', function(e, el) {
 	console.log(e.target.dataset.id);
 
 });
+
+
+
+
+
+var ElMobileMenu = document.querySelector('.mobileMenu');
+var ElCloseMobileMenu = document.querySelector('.closeMobileMenu');
+var ElBtnSandwich = document.querySelector('.btnSandwich');
+
+ElCloseMobileMenu.addEventListener('click', function() {
+	ElMobileMenu.classList.remove('act');
+	document.body.style.overflow = '';
+})
+
+ElBtnSandwich.addEventListener('click', function() {
+	ElMobileMenu.classList.add('act');
+	document.body.style.overflow = 'hidden';
+})
