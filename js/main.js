@@ -20,8 +20,9 @@ scheduledDaysMeny.forEach(function(el) {
 
 
 var topMenuItem = document.querySelector('.mainMenu');
+var leftMenuItem = document.querySelector('.actionBarMenu');
 
-topMenuItem.addEventListener('click', function(e, el) {
+var menuHandler = function(e, el) {
 
 	e.preventDefault();
 
@@ -49,7 +50,10 @@ topMenuItem.addEventListener('click', function(e, el) {
 	scrollTarget.scrollIntoView({
 		behavior: 'smooth'
 	});
-});
+};
+
+topMenuItem.addEventListener('click', menuHandler);
+leftMenuItem.addEventListener('click', menuHandler);
 
 
 

@@ -341,11 +341,14 @@ input[type="password"] {
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
-	width: 100%;
 	padding: 32px 0 14px 0;
 	background: #fff;
+	margin: 0 -4rem;
 	margin-bottom: 40px;
 	animation: mainMenu 1s linear 1.5s forwards;
+	z-index: 2;
+	padding-right: 4rem;
+    padding-left: 4rem;
 }
 
 .mainMenu ul {
