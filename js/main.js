@@ -21,6 +21,7 @@ scheduledDaysMeny.forEach(function(el) {
 
 var topMenuItem = document.querySelector('.mainMenu');
 var leftMenuItem = document.querySelector('.actionBarMenu');
+var listMobileMenu = document.querySelector('.listMobileMenu');
 
 var menuHandler = function(e, el) {
 
@@ -54,6 +55,15 @@ var menuHandler = function(e, el) {
 
 topMenuItem.addEventListener('click', menuHandler);
 leftMenuItem.addEventListener('click', menuHandler);
+listMobileMenu.addEventListener('click', function(e, el){
+	e.preventDefault();
+
+	if(e.target.nodeName !== 'A') {
+		return;
+	}
+	closeMobileMenu();
+	menuHandler(e, el);
+});
 
 
 
@@ -62,11 +72,12 @@ leftMenuItem.addEventListener('click', menuHandler);
 var ElMobileMenu = document.querySelector('.mobileMenu');
 var ElCloseMobileMenu = document.querySelector('.closeMobileMenu');
 var ElBtnSandwich = document.querySelector('.btnSandwich');
-
-ElCloseMobileMenu.addEventListener('click', function() {
+var closeMobileMenu = function() {
 	ElMobileMenu.classList.remove('act');
 	document.body.style.overflow = '';
-});
+};
+
+ElCloseMobileMenu.addEventListener('click', closeMobileMenu);
 
 ElBtnSandwich.addEventListener('click', function() {
 	ElMobileMenu.classList.add('act');
