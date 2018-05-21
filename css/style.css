@@ -338,6 +338,7 @@ input[type="password"] {
 .mainMenu {
 	transform: translateY(-100%);
 	opacity: 0;
+	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
 	padding: 32px 0 14px 0;
@@ -422,6 +423,7 @@ input[type="password"] {
 	width: 96px;
 	height: 96px;
 	overflow: hidden;
+	flex: none;
 }
 
 .itemSpeakerPhoto img {
@@ -429,7 +431,7 @@ input[type="password"] {
 }
 
 .itemSpeakerData {
-
+	flex: 1 1 0;
 }
 
 .itemSpeakerName {
@@ -865,7 +867,7 @@ html {
 		padding: var(--mobilePadding);
 		box-sizing: border-box;
 		width: 100%;
-    	margin: 0;
+		margin: 0;
 	}
 	.mainMenu ul li {
 		display: none;
