@@ -15,7 +15,6 @@ function initialize() {
   
   var map = new google.maps.Map(mapCanvas, mapOptions);
   var service = new google.maps.places.PlacesService(map);
-  console.log(google.maps);
 
   service.getDetails({
     placeId: 'ChIJ46emx_mgJ0ERg-dtnn8PyQk'
