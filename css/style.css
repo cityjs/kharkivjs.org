@@ -864,6 +864,8 @@ html {
 	.mainMenu {
 		padding: var(--mobilePadding);
 		box-sizing: border-box;
+		width: 100%;
+    	margin: 0;
 	}
 	.mainMenu ul li {
 		display: none;
