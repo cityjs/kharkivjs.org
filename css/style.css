@@ -463,6 +463,9 @@ input[type="password"] {
 	width: 100%;
 	height: 100%;
 }
+.itemSpeakerTopicDesc:empty::before {
+	content: 'Topic description will be added soon';
+}
 .itemSpeaker:hover .innerItemSpeakerPhoto {
 	transform: rotateY(180deg);
 }
@@ -801,6 +804,30 @@ html {
 		border-radius: 4px;
 		border: none;
 		padding: 0;
+	}
+
+	.itemSpeakerTopicDesc {
+		grid-area: description;
+		color: #757575;
+		line-height: 1.2;
+		font-size: 0.8rem;
+		margin-top: 20px;
+	}
+	.itemSpeakerPhoto {
+		width: 96px;
+		height: 96px;
+		margin-right: 16px;
+	}
+	.itemSpeaker {
+		grid-template-rows: auto auto auto;
+		grid-template-columns: auto 1fr;
+		grid-template-areas: "photo topic" "data data" "description description";
+	}
+	.itemSpeakerData {
+		margin-top: 16px;
+	}
+	.itemSpeakerDesc, .itemSpeakerCity {
+		font-size: 0.8rem;
 	}
 }
 
