@@ -24,6 +24,9 @@ var leftMenuItem = document.querySelector('.actionBarMenu');
 var listMobileMenu = document.querySelector('.listMobileMenu');
 
 var menuHandler = function(e, el) {
+	if(e.target.href.length > 1) {
+		return;
+	}
 
 	e.preventDefault();
 
@@ -56,11 +59,13 @@ var menuHandler = function(e, el) {
 topMenuItem.addEventListener('click', menuHandler);
 leftMenuItem.addEventListener('click', menuHandler);
 listMobileMenu.addEventListener('click', function(e, el){
-	e.preventDefault();
 
 	if(e.target.nodeName !== 'A') {
 		return;
 	}
+
+	e.preventDefault();
+
 	closeMobileMenu();
 	menuHandler(e, el);
 });
