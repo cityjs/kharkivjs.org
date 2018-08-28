@@ -88,3 +88,10 @@ ElBtnSandwich.addEventListener('click', function() {
 	ElMobileMenu.classList.add('act');
 	document.body.style.overflow = 'hidden';
 });
+
+if (window.matchMedia("(max-width: 1023px)").matches) {
+	const speakerItems = document.querySelectorAll('.itemSpeaker');
+	for (var i = 0; i < speakerItems.length; i++) {
+		speakerItems[i].appendChild(speakerItems[i].querySelector('.itemSpeakerTopicDesc'));
+	}
+}

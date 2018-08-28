@@ -404,39 +404,83 @@ input[type="password"] {
 /******************/
 
 .itemSpeaker {
-	border: 4px solid #EBEBEB;
-	padding: 20px;
-	display: flex;
-	flex-wrap: wrap;
+	background: #F5F5F5;
+	padding: 24px;
+	display: grid;
 	margin-bottom: 40px;
+	grid-template-rows: auto 1fr;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: "photo topic" "photo data";
 }
 
 .itemSpeakerTopic {
+	grid-area: topic;
 	font-size: 1.4rem;
 	line-height: 1.2;
-	margin-bottom: 24px;
-	flex: 0 0 100%;
+	margin-bottom: 16px;
+	letter-spacing: -0.7px;
 }
 
 .itemSpeakerPhoto {
+	grid-area: photo;
 	margin-right: 24px;
-	width: 96px;
-	height: 96px;
+	width: 192px;
+	height: 192px;
 	overflow: hidden;
-	flex: none;
 }
 
 .itemSpeakerPhoto img {
 	width: 100%;
 }
 
+.itemSpeakerPhoto .itemSpeakerTopicDesc {
+	font-size: 0.65rem;
+	color: #616161;
+	line-height: 1.2;
+}
+
+.itemSpeakerPhoto {
+	perspective: 1000px;
+}
+.itemSpeakerPhoto .innerItemSpeakerPhoto {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+	height: 100%;
+}
+.itemSpeakerPhoto img,
+.itemSpeakerPhoto .itemSpeakerTopicDesc {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.itemSpeakerPhoto .innerItemSpeakerPhoto img {
+	z-index: 2;
+}
+.itemSpeakerPhoto .innerItemSpeakerPhoto .itemSpeakerTopicDesc {
+	transform: rotateY(180deg);
+	width: 100%;
+	height: 100%;
+}
+.itemSpeakerTopicDesc:empty::before {
+	content: 'Topic description will be added soon';
+}
+.itemSpeaker:hover .innerItemSpeakerPhoto {
+	transform: rotateY(180deg);
+}
+
 .itemSpeakerData {
-	flex: 1 1 0;
+	grid-area: data;
+}
+
+.itemSpeakerData > div:last-child {
+	padding-bottom: 0;
 }
 
 .itemSpeakerName {
 	font-size: 1rem;
-	padding-bottom: 10px;
+	padding-bottom: 9px;
 }
 
 .itemSpeakerDesc,
@@ -760,6 +804,30 @@ html {
 		border-radius: 4px;
 		border: none;
 		padding: 0;
+	}
+
+	.itemSpeakerTopicDesc {
+		grid-area: description;
+		color: #757575;
+		line-height: 1.2;
+		font-size: 0.8rem;
+		margin-top: 20px;
+	}
+	.itemSpeakerPhoto {
+		width: 96px;
+		height: 96px;
+		margin-right: 16px;
+	}
+	.itemSpeaker {
+		grid-template-rows: auto auto auto;
+		grid-template-columns: auto 1fr;
+		grid-template-areas: "photo topic" "data data" "description description";
+	}
+	.itemSpeakerData {
+		margin-top: 16px;
+	}
+	.itemSpeakerDesc, .itemSpeakerCity {
+		font-size: 0.8rem;
 	}
 }
 
