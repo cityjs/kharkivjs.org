@@ -564,13 +564,13 @@ input[type="password"] {
 }
 
 .stageScheduledDay .itemSchedule .scheduledTalkTime {
-	flex: 0 1 60px;
+	flex: 0 0 50px;
 	padding-right: 10px;
 	color: rgba(0,0,0,.4);
 }
 
 .stageScheduledDay .itemSchedule .scheduledSpeakerName {
-	flex: 0 1 200px;
+	flex: 0 0 160px;
 	padding-right: 10px;
 }
 
