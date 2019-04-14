@@ -3,7 +3,7 @@ function initialize() {
   var myLatlng = new google.maps.LatLng(49.98944000, 36.22234348);
   var mapOptions = {
     center: myLatlng,
-    zoom: 18,
+    zoom: 5,
     mapTypeControl: false,
     draggable: true,
     scaleControl: false,
@@ -12,14 +12,14 @@ function initialize() {
     streetViewControl: false,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };
-  
+
   var map = new google.maps.Map(mapCanvas, mapOptions);
   var service = new google.maps.places.PlacesService(map);
 
   service.getDetails({
     placeId: 'ChIJ46emx_mgJ0ERg-dtnn8PyQk'
   }, function(place, status) {
-    
+
       var marker = new google.maps.Marker({
         map: map,
         position: place.geometry.location
@@ -34,5 +34,5 @@ function initialize() {
 }
 
 function initMap() {
-  google.maps.event.addDomListener(window, 'load', initialize);  
+  google.maps.event.addDomListener(window, 'load', initialize);
 }
