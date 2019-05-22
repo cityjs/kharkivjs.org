@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kharkiv.js | Javascript conference | Ukrainian Javascript Community</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<meta itemprop="image" content="http://kharkivjs.org/img/photos/1.jpg">
+	<meta property="og:title" content="Kharkiv.js | Javascript conference | Ukrainian Javascript Community">
+	<meta property="og:type" content="article">
+	<meta property="og:url" content="http://kharkivjs.org">
+	<meta property="og:image" content="http://kharkivjs.org/img/banner.png">
+	<meta property="og:description" content="Kharkiv.js | Javascript conference | Ukrainian Javascript Community">
+
+	<script src="js/gmap.js"></script>
+	<script src="js/smoothScroll.js"></script>
+
+</head>
+<body>
+
+<!--****************WRAPPER****************-->
+<div class="wrapper">
+
+	<div class="actionBar">
+		<div class="actionBarTop">
+			<div class="conferenceDate">5 and 6 of October, 2019</div>
+			<div class="conferenceTitle">Kharkiv<span>JS x10</span></div>
+			<div class="conferenceDesc">Largest JavaScript event <br />in <span class="uaFlag"></span>Ukraine</div>
+
+			<div class="conferencePrice">
+				<!--<span class="conferencePriceTitle">Late Bird PRICE</span>
+				<span class="conferencePriceValue"><span>&#8372;</span>Sold out</span>-->
+			</div>
+
+			<div class="conferenceBtns">
+				<a href="https://docs.google.com/forms/d/1Mti6URPiXbPH4eNHY64m_JXaosfm6n3a2hNiLyd0IV0" class="btnRegister"><span>Call For Paper</span></a>
+				<!--<a href="https://2event.com/events/1497849" class="btnRegister"><span>Buy Ticket</span></a>-->
+			</div>
+		</div>
+
+		<div class="actionBarBottom">
+			<div class="conferenceSocial">
+				<a href="https://t.me/kharkivjs" target = "_blank" class="fb"></a>
+				<a href="https://twitter.com/kharkivjs" target = "_blank" class="tw"></a>
+				<a href="https://www.youtube.com/channel/UCYCPt7SWMZa4T8GwkQ-K-0A" target = "_blank" class="yt"></a>
+			</div>
+
+			<div class="actionBarMenu">
+				<ul>
+					<li><a href="index-2018.html">Previous events</a></li>
+					<li><a href="#">For partners</a></li>
+					<li><a data-id = "contact" href="#contactDest">Contacts</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="infoBar">
+		<div class="infoBarInner">
+
+			<div class="mainMenu">
+				<ul>
+					<!--<li class="act"><a data-id = "speaker" href="#speakerDest">Speakers</a></li>
+					<li><a data-id = "schedule" href="#scheduleDest">Schedule</a></li>
+					<li><a data-id = "partners" href="#partnersDest">Partners</a></li>-->
+					<li><a href="https://docs.google.com/forms/d/1Mti6URPiXbPH4eNHY64m_JXaosfm6n3a2hNiLyd0IV0">Call For Paper</a></li>
+					<!--<li><a data-id = "place" href="#placeDest">Place</a></li>-->
+					<li class="up"><a data-id = "up" href="#"></a></li>
+					<li class="btnSandwich"><img src="img/sandwich.svg"></li>
+					<!--<li class="btnRegisterMenu"><a data-id = "up" href="#">Register now</a></li>-->
+				</ul>
+			</div>
+
+			<h1>Title 1</h1>
+			<h2>Title 2</h2>
+			<p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+			<p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+			<p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+			<h2>Title 2</h2>
+			<p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+			<p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+			<p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+
+
+		</div>
+	</div>
+
+</div><!-- end .wrapper-->
+
+<div class="mobileMenu">
+	<span class="closeMobileMenu">+</span>
+	<div class="listMobileMenu">
+		<ul>
+			<li>Kharkiv<span>JS</span> 2018</li>
+			<li><a data-id = "speaker" href="#speakerDest">Speakers</a></li>
+			<li><a data-id = "schedule" href="#scheduleDest">Schedule</a></li>
+			<li><a data-id = "partners" href="#partnersDest">Partners</a></li>
+			<li><a data-id = "place" href="#placeDest">Place</a></li>
+		</ul>
+	</div>
+
+	<div class="conferenceSocial">
+		<a href="https://t.me/kharkivjs" target = "_blank" class="fb"></a>
+		<a href="https://twitter.com/kharkivjs" target = "_blank" class="tw"></a>
+		<a href="https://www.youtube.com/channel/UCYCPt7SWMZa4T8GwkQ-K-0A" target = "_blank" class="yt"></a>
+	</div>
+
+	<div class="actionBarMenu">
+		<ul>
+			<li><a href="#">Previous events</a></li>
+			<li><a href="#">Contacts</a></li>
+		</ul>
+	</div>
+</div>
+
+
+<script src="js/main.js"></script>
+<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClnuWKtEPBeEN1HcSuWK84rijAb3SqAFI&libraries=places&callback=initMap">
+</script>
+<script>
+(function(i, s, o, g, r, a, m) {
+  i['GoogleAnalyticsObject'] = r;
+  (i[r] =
+    i[r] ||
+    function() {
+      (i[r].q = i[r].q || []).push(arguments);
+    }), (i[r].l = 1 * new Date());
+  (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+  a.async = 1;
+  a.src = g;
+  m.parentNode.insertBefore(a, m);
+})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+ga('create', 'UA-18502589-2', 'auto');
+ga('send', 'pageview');
+</script>
+</body>
+</html>
