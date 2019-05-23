@@ -36,7 +36,9 @@ img {
 }
 
 p {
-
+	font-size: 1rem;
+	padding: 0;
+	margin: 0 0 1rem 0;
 }
 
 a {
@@ -51,20 +53,24 @@ a:hover {
 	text-decoration: none;
 }
 
-h1, h2, h3, h4 {
-
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0 0 1rem 0;
+	font-weight: 400;
 }
 
 h1 {
-
+	font-size: 3.6rem;
 }
 
 h2 {
-
+	font-size: 2.1rem;
 }
 
 h3 {
-
+	font-size: 1.4rem;
+	line-height: 1.2;
+	letter-spacing: -0.7px;
 }
 
 h4 {
@@ -146,13 +152,12 @@ input[type="password"] {
 	padding-bottom: 70px;
 }
 
-.conferenceTitle {
-	font-size: 3.6rem;
-	padding-bottom: 10px;
-	margin-left: -4px;
+h1.conferenceTitle {
+	padding: 0 0 10px 0;
+	margin: 0 0 0 -4px;
 }
 
-.conferenceTitle span {
+h1.conferenceTitle span {
 	color: var(--yellow);
 }
 
@@ -316,9 +321,8 @@ input[type="password"] {
 	margin: 0 4rem;
 }
 
-.titleContainer {
-	font-size: 2.1rem;
-	margin-bottom: 20px;
+h2.titleContainer {
+	margin: 0 0 20px 0;
 }
 
 .contentContainer {
@@ -413,12 +417,9 @@ input[type="password"] {
 	grid-template-areas: "photo topic" "photo data";
 }
 
-.itemSpeakerTopic {
+.itemSpeaker h3 {
 	grid-area: topic;
-	font-size: 1.4rem;
-	line-height: 1.2;
-	margin-bottom: 16px;
-	letter-spacing: -0.7px;
+	margin: 0 0 16px 0;
 }
 
 .itemSpeakerPhoto {
@@ -688,8 +689,8 @@ input[type="password"] {
 	width: 80%;
 }
 
-.videoContainer .titleContainer {
-	margin-bottom: 48px; 
+.videoContainer h2 {
+	margin: 0 0 48px 0;
 }
 
 .videoContainer .itemVideo {
@@ -836,6 +837,10 @@ html {
 	html {
 		font-size: 16px;
 	}
+	h2 {
+		padding-left: var(--mobilePadding);
+		padding-right: var(--mobilePadding);
+	}
 	.actionBar {
 		background-size: 390px;
 		background-position: -90px 0;
@@ -963,10 +968,6 @@ html {
 		padding: 0 var(--mobilePadding) 20px var(--mobilePadding);
 	}
 
-	.titleContainer {
-		padding-left: var(--mobilePadding);
-		padding-right: var(--mobilePadding);
-	}
 
 	.photoContainerChannel {
 		margin: 0 var(--mobilePadding);
