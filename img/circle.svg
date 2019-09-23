@@ -1,18 +1,24 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
-    <title>⚪️</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="AppleColorEmoji, Apple Color Emoji" font-size="16" font-weight="normal" line-spacing="48">
-        <g id="kharkiv_js_1280" transform="translate(-905.000000, -2441.000000)" fill="#000000">
-            <g id="schedule" transform="translate(720.000000, 2016.000000)">
-                <g id="grey" transform="translate(0.000000, 411.000000)">
-                    <text id="⚪️">
-                        <tspan x="185" y="20">⚪️</tspan>
-                    </text>
-                </g>
-            </g>
-        </g>
+<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+ <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+ <title>⚪️</title>
+ <desc>Created with Sketch.</desc>
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="26" width="26" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g font-weight="normal" font-size="16" font-family="AppleColorEmoji, Apple Color Emoji" fill-rule="evenodd" fill="none" id="Page-1">
+   <g fill="#000000" id="kharkiv_js_1280">
+    <g id="schedule">
+     <g id="grey">
+      <text x="-324.164063" y="409.800916" id="⚪️">
+       <tspan id="svg_1" y="18.800916" x="3.960938">⚪️</tspan>
+      </text>
+     </g>
     </g>
+   </g>
+  </g>
+ </g>
 </svg>

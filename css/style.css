@@ -557,6 +557,10 @@ h2.titleContainer {
 	line-height: 28px;
 }
 
+.stageScheduledDay .stageScheduledDayTitle img {
+	padding-top: 1px;
+}
+
 .stageScheduledDay .itemSchedule {
 	font-size: 0.9rem;
 	display: flex;
@@ -614,10 +618,11 @@ h2.titleContainer {
 	margin-bottom: 70px;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .listPartners .itemPartner {
-	margin: 20px 20px 0 0;
+	margin: 30px 15px 0 15px;
 }
 
 /******************/
