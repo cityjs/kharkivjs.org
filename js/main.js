@@ -24,7 +24,7 @@ var leftMenuItem = document.querySelector('.actionBarMenu');
 var listMobileMenu = document.querySelector('.listMobileMenu');
 
 var menuHandler = function(e, el) {
-	if(e.target.href.length > 1) {
+	if(!e.target.href) {
 		return;
 	}
 
