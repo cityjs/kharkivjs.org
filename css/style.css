@@ -428,21 +428,9 @@ h2.titleContainer {
 	width: 192px;
 	height: 192px;
 	overflow: hidden;
-}
-
-.itemSpeakerPhoto img {
-	width: 100%;
-}
-
-.itemSpeakerPhoto .itemSpeakerTopicDesc {
-	font-size: 0.65rem;
-	color: #616161;
-	line-height: 1.2;
-}
-
-.itemSpeakerPhoto {
 	perspective: 1000px;
 }
+
 .itemSpeakerPhoto .innerItemSpeakerPhoto {
 	transition: 0.6s;
 	transform-style: preserve-3d;
@@ -456,18 +444,26 @@ h2.titleContainer {
 	position: absolute;
 	top: 0;
 	left: 0;
+	background: #ddd;
 }
 .itemSpeakerPhoto .innerItemSpeakerPhoto img {
-	z-index: 2;
+	width: 100%;
 }
 .itemSpeakerPhoto .innerItemSpeakerPhoto .itemSpeakerTopicDesc {
 	transform: rotateY(180deg);
 	width: 100%;
 	height: 100%;
+	font-size: 0.65rem;
+	color: #616161;
+	line-height: 1.2;
+	padding: 10px;
+	box-sizing: border-box;
 }
+
 .itemSpeakerTopicDesc:empty::before {
 	content: 'Topic description will be added soon';
 }
+
 .itemSpeaker:hover .innerItemSpeakerPhoto {
 	transform: rotateY(180deg);
 }
@@ -819,6 +815,7 @@ html {
 		line-height: 1.2;
 		font-size: 0.8rem;
 		margin-top: 20px;
+		padding: 0;
 	}
 	.itemSpeakerPhoto {
 		width: 96px;
