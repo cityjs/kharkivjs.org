@@ -18,8 +18,8 @@
          url('../fonts/firamono-bold-webfont.woff') format('woff'),
          url('../fonts/firamono-bold-webfont.ttf') format('truetype'),
          url('../fonts/firamono-bold-webfont.svg#fira_monobold') format('svg');
-    font-weight: normal;
-    font-style: normal;
+    font-weight: bold;
+    font-style: ariel;
 }
 
 @font-face {
@@ -152,7 +152,7 @@ ol li {
 }
 
 a {
-	font-size: 13px;
+	font-size: 15px;
 	font-family: 'fira_sansregular';
 	color: #f0db4f;
 }
@@ -391,7 +391,7 @@ input[type="text"] {
 
 .btnRegister.feedback a {
 	display: inline-block;
-	height: 96px;
+	height: 100px;
 	line-height: 96px;
 	font-family: 'fira_monoregular';
 	font-size: 30px;
