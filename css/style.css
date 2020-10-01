@@ -242,6 +242,7 @@ input[type="text"] {
 	min-height: 600px;
 	padding: 25px 0 0 0;
 	text-align: center;
+	background-attachment: fixed;
 }
 
 .eventSocial {
