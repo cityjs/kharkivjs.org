@@ -103,53 +103,6 @@ img {
 	border: none;
 }
 
-h1, h2, h3, h4 {
-
-}
-
-h1 {
-
-}
-
-h2 {
-
-}
-
-h3 {
-
-}
-
-h4 {
-
-}
-
-p{
-
-}
-
-ul, ul li {
-
-}
-
-ul {
-
-}
-
-ul li {
-
-}
-
-ul li a{
-
-}
-
-ol {
-
-}
-
-ol li {
-
-}
 
 a {
 	font-size: 13px;
@@ -223,7 +176,7 @@ input[type="text"] {
 #content {
 
 }
-
+/* CSS Classes*/
 .titleBlock {
 	height: 50px;
 	line-height: 50px;
