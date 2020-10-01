@@ -103,53 +103,6 @@ img {
 	border: none;
 }
 
-h1, h2, h3, h4 {
-
-}
-
-h1 {
-
-}
-
-h2 {
-
-}
-
-h3 {
-
-}
-
-h4 {
-
-}
-
-p{
-
-}
-
-ul, ul li {
-
-}
-
-ul {
-
-}
-
-ul li {
-
-}
-
-ul li a{
-
-}
-
-ol {
-
-}
-
-ol li {
-
-}
 
 a {
 	font-size: 13px;
@@ -685,5 +638,5 @@ a.eleks:after {
 	text-transform: uppercase;
 	font-size: 24px;
 	display: block;
-	padding-bottom: 35px;
+	padding-bottom: 40px;
 }
