@@ -687,3 +687,21 @@ a.eleks:after {
 	display: block;
 	padding-bottom: 35px;
 }
+/*New code*/
+.partnersCategory{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.partnersCategory .titlePartnersCategory{
+	width: 100%;
+    	justify-content: center;
+}
+.partnersCategory  .dataart{
+	display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+}
