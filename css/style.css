@@ -88,6 +88,9 @@ html,body {
 }
 
 * {
+	/*added line for avoid horizontal scroll bar */
+  	overflow-x: hidden;
+	
 	vertical-align: top;
 }
 
