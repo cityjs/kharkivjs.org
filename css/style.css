@@ -74,10 +74,10 @@
 
 
 body {
-	line-height: 1;
-	font-size: 12px;
+	line-height: 2;
+	font-size: 15px;
 	font-family: 'fira_sansregular';
-	margin: 0;
+	margin: 5;
 	padding: 0;
 	color: #000;
 	background: #fff;
@@ -152,9 +152,9 @@ ol li {
 }
 
 a {
-	font-size: 13px;
+	font-size: 18px;
 	font-family: 'fira_sansregular';
-	color: #f0db4f;
+	color: #f0e34f;
 }
 
 a:hover {
@@ -229,7 +229,7 @@ input[type="text"] {
 	line-height: 50px;
 	background: #4a472d;
 	font-family: 'fira_monobold';
-	font-size: 18px;
+	font-size: 20px;
 	color: #fff;
 	display: block;
 	text-align: center;
