@@ -126,6 +126,62 @@ input[type="password"] {
 }
 
 /******************/
+/****TICKER****/
+/******************/
+.ticker {
+	background-color: #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1em;
+	border-bottom: 1px solid rgb(255 255 255 / 50%);
+}
+
+.ticker__content {
+	font-size: 1rem;
+	line-height: 1.4;
+	text-align: center;
+	margin: 0;
+}
+
+.ticker__content a {
+	display: block;
+	color: #ffd101;
+}
+.ticker__content .uaFlag {
+	height: 18px;
+	vertical-align: sub;
+}
+
+@media (min-width: 640px) {
+	.ticker__content a {
+		display: inline-block;
+	}
+}
+
+@media (min-width: 768px) {
+	.ticker__content {
+		font-size: 0.8rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	.ticker {
+		border-bottom: none;
+	}
+
+	.ticker__content {
+		font-size: 1rem;
+	}
+}
+
+@media (min-width: 1280px) {
+	.ticker__content .uaFlag {
+		vertical-align: unset;
+	}
+}
+
+/******************/
 /****ACTION BAR****/
 /******************/
 .actionBar {
@@ -643,7 +699,7 @@ h2.titleContainer {
 .contactAddressBoxSmall {
 	font-size: 0.65rem;
 	margin-bottom: 24px;
-	
+
 }
 
 .contactSeparator {
@@ -948,7 +1004,7 @@ html {
 	.mainMenu ul li {
 		display: none;
 	}
-	
+
 	.mainMenu ul .btnSandwich,
 	.mainMenu ul .btnRegisterMenu {
 		display: block;
@@ -1034,7 +1090,7 @@ html {
 	.scheduledDaysMenu {
 		margin: 0 var(--mobilePadding) 25px var(--mobilePadding);
 	}
-	
+
 	.actionBarTop,
 	.actionBarBottom {
 		padding: var(--mobilePadding);
